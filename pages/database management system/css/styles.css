@@ -1,0 +1,209 @@
+a{
+	text-decoration: none;
+	color:black;
+}
+a:hover{
+	text-decoration: none;
+	color:black;
+}
+
+.row, .col{
+	margin:0;
+	padding: 0;
+}
+
+p{
+	margin-bottom: 0;
+}
+
+@font-face{
+	font-family: "simplifica";
+	src:url("fonts/simplifica.ttf");
+}
+
+@font-face{
+	font-family: "minimalist";
+	src:url("fonts/minimalist.ttf");
+}
+
+
+
+/*********************** Header Start ************************/
+
+/*		Index Page LOGO    */
+
+.mylogo a{
+	font-family: simplifica;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+/* Index page logo end*/
+
+
+/*		Navigation  bar*/
+.navig a{
+	font-size: 13px;
+	font-weight: lighter;
+	padding: 5px 10px;
+	letter-spacing: 1px;
+	border-bottom: 1px solid white;
+	transition: border 0.4s;
+}
+
+.navig a:hover{
+	border-bottom-color: black;
+}
+/*	navigation bar end*/
+
+
+
+@media screen and (min-width: 576px){
+	.mylogo a{
+		font-size: 28px;
+		margin-left: 40px;
+		letter-spacing: 10px;
+	}
+	
+	.navig{
+	margin-right: 40px;
+	}
+
+	.navig a{
+	font-size: 17px;
+	font-weight: lighter;
+}
+}
+
+/****************************** Header End **********************/
+
+
+
+/***************************** Course Banner start ****************************/
+.course-dbms{
+	background-color: #94618E;
+	padding: 100px 0;
+}
+
+.course-title, .course-text, .course-quote{
+	font-family: minimalist;
+	color: white;
+}
+
+.course-title{
+	font-size: 23px;
+}
+
+.course-text{
+	font-size: 17px;
+}
+
+.course-quote{
+	font-size: 13px;
+}
+
+@media screen and (min-width: 768px){
+	.course-title{
+		font-size: 60px;
+	}
+
+	.course-text{
+		font-size: 30px;
+	}
+
+	.course-quote{
+		font-size: 22px;
+	}
+}
+
+/***************************** Course Banner end ****************************/
+
+
+
+/***************************** Did you know start ****************************/
+.did-you-know{
+	font-size: 15px;
+	background-color: #FFF7C0;
+}
+
+.did-you-know span{
+	color:#F81B84;
+}
+
+/***************************** Did you know end ****************************/
+
+
+
+/****************************** week tabs start ******************************/
+.week-tabs{
+	border:1px solid white;
+	border-right: none;
+	border-radius: 1px;
+	font-size: 13px;
+	padding: 4px 8px;
+	transition: all 0.3s
+}
+
+.week-tabs-last-border{
+	border-right:1px solid white;
+}
+
+.week-tabs-dbms{
+	color: #94618E;
+	border-color: #94618E;
+}
+
+.week-tabs-dbms:hover, .week-tabs-dbms-selected{
+	color: white;
+	background-color: #94618E;
+}
+
+
+@media screen and (min-width: 768px){
+	.week-tabs{
+		font-size: 18px;
+	}
+
+	.week-tabs-remove-border{
+		border-right: none;
+	}
+}
+
+/****************************** week tabs end ******************************/
+
+
+.assignment{
+	font-family: simplifica;
+	font-size: 60px;
+}
+
+.question{
+	border:1px solid #CCCBC6;
+	border-radius: 5px;
+	font-size: 13px;
+}
+
+.answer-tag-dbms{
+	color:#94618E;
+	cursor: pointer;
+	user-select: none;
+	background-color: white;
+	border:1px solid #94618E;
+	transition: color 0.3s
+}
+
+.answer-tag-dbms:hover{
+	color: white;
+	background-color: #94618E;
+	border:1px solid #94618E;
+}
+
+.question-answer-text{
+	display: none;
+}
+
+@media screen and (min-width: 768px){
+	.question{
+		font-size: 16px;
+	}
+}

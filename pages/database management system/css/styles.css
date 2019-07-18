@@ -183,7 +183,7 @@ p{
 	font-size: 13px;
 }
 
-.answer-tag-dbms{
+.answer-tag-dbms, .discuss-button-dbms{
 	color:#94618E;
 	cursor: pointer;
 	user-select: none;
@@ -192,13 +192,13 @@ p{
 	transition: color 0.3s
 }
 
-.answer-tag-dbms:hover{
+.answer-tag-dbms:hover, .discuss-button-dbms:hover{
 	color: white;
 	background-color: #94618E;
 	border:1px solid #94618E;
 }
 
-.question-answer-text{
+.question-answer-text, .discuss-text{
 	display: none;
 }
 

@@ -172,6 +172,9 @@ p{
 /****************************** week tabs end ******************************/
 
 
+
+
+/******************************* Quiz question answer start **********************/
 .assignment{
 	font-family: simplifica;
 	font-size: 60px;
@@ -206,4 +209,86 @@ p{
 	.question{
 		font-size: 16px;
 	}
+}
+/******************************* Quiz question answer end **********************/
+
+
+
+/***************************** experience start **********************************/
+.exp{
+	border-top: 1px solid #CCCBC6;
+	color: #9099A2;
+	font-family: simplifica;
+	letter-spacing: 1px;
+	padding: 60px 10px;
+	font-size: 30px;
+}
+
+.exp-read-button, .exp-share-button {
+	background-color:#828081;
+	padding: 5px 10px;
+	color: white;
+	border-radius: 1px;
+	transition: all 0.3s;
+}
+
+.exp-read-button:hover, .exp-share-button:hover{
+	background-color: #9099A2;
+	color: white;
+}
+
+@media screen and (min-width: 768px){
+	.exp{
+		font-size: 40px;
+		padding: 120px 10px;
+	}
+}
+/***************************** experience end **********************************/
+
+
+
+/******************************** share button start ***********************************/
+.share-container{
+	background-color: rgb(235,110,128);
+}
+
+.share-container p, .share-button div a{
+	font-family: minimalist;
+	color:white;
+	font-weight: bold;
+}
+
+.share-container p{
+	font-size: 30px;
+}
+
+.share-button div a{
+	font-size: 20px;
+}
+
+.fa-facebook-square, .fa-instagram, .fa-whatsapp{
+	font-size: 30px;
+}
+
+
+@media screen and (min-width: 768px){
+	.share-container p{
+		font-size: 60px;
+	}
+
+	.share-button div a{
+		font-size: 30px;
+	}
+
+	.fa-facebook-square, .fa-instagram, .fa-whatsapp{
+		font-size: 40px;
+	}
+}
+/******************************** share button end ***********************************/
+
+
+
+footer p{
+	font-family: simplifica;
+	letter-spacing: 5px;
 }

@@ -10,6 +10,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/styles.css">
+
 	<!-- <script src="https://kit.fontawesome.com/53b1e88129.js"></script> -->
 </head>
 
@@ -72,6 +73,64 @@
 
 	<main>
 		<h1 class="assignment text-center py-5">Assignment</h1>
+
+
+		<!-- Modal discuss box start -->
+		<div class="modal" id="modal-discuss">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					
+					<!-- Modal Header -->
+				    <div class="modal-header">
+				      <h4 class="modal-title">Modal Heading</h4>
+				      <button type="button" class="close" data-dismiss="modal">&times;</button>
+				    </div>
+
+				    <!-- Modal body -->
+				    <div class="modal-body">
+				    	<div id="disqus_thread"></div>
+							<script>
+							var disqus_config = function () {
+							this.page.url = 'https://sanatan-upadhyay.github.io/np-dev/dbms-week-1-q1#db-1';  // Replace PAGE_URL with your page's canonical URL variable
+							this.page.identifier = 'dbms-week-1-q1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							this.page.title  = 'dbms-week1-q1';
+							};
+
+							(function() { // DON'T EDIT BELOW THIS LINE
+							var d = document, s = d.createElement('script');
+							s.src = 'https://npdev.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+							})();
+
+
+							/* * * Disqus Reset Function * * */
+						    var reset = function (newIdentifier, newUrl, newTitle, newLanguage) {
+						        DISQUS.reset({
+									reload: true,
+						            config: function () {
+								        this.page.identifier = newIdentifier;
+						                this.page.url = newUrl;
+						                this.page.title = newTitle;
+						                this.language = newLanguage;
+						            }
+						        });
+						    };
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+				    </div>
+
+      				<!-- Modal footer -->
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      				</div>
+
+				</div><!-- modal content end -->
+			</div><!-- modal dialog end -->
+		</div>
+		<!-- Modal discuss box end -->
+
+
 		<div class="row">
 			
 			<div class="col-0 col-md-2"></div>
@@ -117,8 +176,8 @@
 
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
-						<span class="question-answer-tag answer-tag-dbms d-inline-block shadow p-2">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold">b</p>
+						<span class="question-answer-tag answer-tag-dbms d-inline-block shadow p-2" id="a-1">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-1">b</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -126,24 +185,7 @@
 					<!-- discussion start -->
 					<div class="discuss mt-3">
 						
-						<span class="discuss-button discuss-button-dbms d-inline-block shadow p-2">Discuss</span>
-						<div class="discuss-text mt-3">
-							<div id="disqus_thread"></div>
-							<script>
-							var disqus_config = function () {
-							this.page.url = 'https://sanatan-upadhyay.github.io/np-dev/pages/database%20management%20system/week-1.html';  // Replace PAGE_URL with your page's canonical URL variable
-							this.page.identifier = 'dbms-week-1-q1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-							};
-
-							(function() { // DON'T EDIT BELOW THIS LINE
-							var d = document, s = d.createElement('script');
-							s.src = 'https://npdev.disqus.com/embed.js';
-							s.setAttribute('data-timestamp', +new Date());
-							(d.head || d.body).appendChild(s);
-							})();
-							</script>
-							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>	
-						</div>
+						<span class="discuss-button discuss-button-dbms d-inline-block shadow p-2" id="db-1" data-toggle="modal" data-target="#modal-discuss" onclick="reset('dbms-week-1-q1', 'https://sanatan-upadhyay.github.io/np-dev/pages/database management system#db-1', 'dbms-week1-q1', 'en');">Discuss</span>
 					</div>
 					<!-- discussion end -->
 				</div>
@@ -157,7 +199,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q2</div>
-						<div class="question-text">If R and S are two relation then R /\ S can be represented as.</div>
+						<div class="question-text">If R and S are two relation then R &cap; S can be represented as.</div>
 					</div>
 					<!-- Question no. and question start -->
 
@@ -176,12 +218,12 @@
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>(R U S) - [(R - S) U (S - R)]</p>
+							<p>(R &cup; S) - [(R - S) &cup; (S - R)]</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>(R U S) /\ [(R - S) [ (S - R)]</p>
+							<p>(R &cup; S) &cap; [(R - S) &cup; (S - R)]</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -189,8 +231,8 @@
 
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
-						<span class="question-answer-tag answer-tag-dbms d-inline-block shadow p-2">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold">c</p>
+						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-2">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-2">c</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -198,12 +240,73 @@
 					<!-- discussion start -->
 					<div class="discuss mt-3">
 						
-						<span class="discuss-button discuss-button-dbms d-inline-block shadow p-2">Discuss</span>
-						<div class="discuss-text mt-3">
+						 <span class="discuss-button-dbms d-inline-block shadow p-2" id="db-2"  data-toggle="modal" data-target="#modal-discuss" onclick="reset('dbms-week-1-q2', 'https://sanatan-upadhyay.github.io/np-dev/pages/database management system#db-2', 'dbms-week1-q2', 'en');">Discuss</span>
+						
+					</div>
+					<!-- discussion end -->
+					
+				</div>
+				<!-- Question - 2 end -->
+
+
+
+
+				<!-- Question - 3 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q3</div>
+						<div class="question-text">Consider the following relations <br><br> student ( id, name, address, gpa, sizeHS ) <br>
+							campus ( location, enrollment, rank ) <br> apply ( id, location, date, major, decision ) <br><br>
+							Identify the correct query to find name and address of all students with GPA > 3.7 and sizeHS < 1000.
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>&prod;<sub>name, address</sub> ( &sigma; <sub>GPA > 3.7 ^ sizeHS < 1000 </sub>( student ) )</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>&sigma;<sub>name, address</sub> ( &prod; <sub>GPA > 3.7 ^ sizeHS < 1000 </sub>( student ) )</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>&prod;<sub>name, address</sub> ( &sigma; <sub>GPA > 3.7 v sizeHS < 1000 </sub>( student ) )</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>&sigma;<sub>name, address</sub> ( &prod; <sub>GPA > 3.7 v sizeHS < 1000 </sub>( student ) )</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-3">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-3">a</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						
+						<!-- <span class="discuss-button-dbms d-inline-block shadow p-2" id="db-3">Discuss</span>
+						<div class="discuss-text mt-3" id="dt-3">
 							<div id="disqus_thread"></div>
 							<script>
 							var disqus_config = function () {
-							this.page.url = 'https://sanatan-upadhyay.github.io/np-dev/pages/database%20management%20system/week-1.html';  // Replace PAGE_URL with your page's canonical URL variable
+							this.page.url = 'dbms-2';  // Replace PAGE_URL with your page's canonical URL variable
 							this.page.identifier = 'dbms-week-1-q2'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 							};
 
@@ -215,12 +318,525 @@
 							})();
 							</script>
 							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>	
-						</div>
+						</div> -->
+
 					</div>
 					<!-- discussion end -->
 				</div>
-				<!-- Question - 2 end -->
+				<!-- Question - 3 end -->
 
+
+
+				<!-- Question - 4 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q4</div>
+						<div class="question-text"><img src="images/week-1-q4.jpg" class="img-fluid"><br><br> Identify the number of tuples in the relation R1 &#8904; R2.
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>5</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>6</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>7</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>20</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-4">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-4">c</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						
+						<!-- <span class="discuss-button-dbms d-inline-block shadow p-2" id="db-4">Discuss</span>
+						<div class="discuss-text mt-3" id="dt-4">
+							<div id="disqus_thread"></div>
+							<script>
+							var disqus_config = function () {
+							this.page.url = 'dbms-2';  // Replace PAGE_URL with your page's canonical URL variable
+							this.page.identifier = 'dbms-week-1-q2'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+
+							(function() { // DON'T EDIT BELOW THIS LINE
+							var d = document, s = d.createElement('script');
+							s.src = 'https://npdev.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+							})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>	
+						</div> -->
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 4 end -->
+
+
+
+				<!-- Question - 5 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q5</div>
+						<div class="question-text">In SQL, which of the following is/are not a DML Commands?
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>DELETE</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>TRUNCATE</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>SELECT</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>CREATE</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-5">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-5">b , d</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						
+						<!-- <span class="discuss-button-dbms d-inline-block shadow p-2" id="db-5">Discuss</span>
+						<div class="discuss-text mt-3" id="dt-5">
+							<div id="disqus_thread"></div>
+							<script>
+							var disqus_config = function () {
+							this.page.url = 'dbms-2';  // Replace PAGE_URL with your page's canonical URL variable
+							this.page.identifier = 'dbms-week-1-q2'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+
+							(function() { // DON'T EDIT BELOW THIS LINE
+							var d = document, s = d.createElement('script');
+							s.src = 'https://npdev.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+							})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>	
+						</div> -->
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 5 end -->
+
+
+
+				<!-- Question - 6 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q6</div>
+						<div class="question-text">Identify the correct statement about Foreign Key.
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>A data element/attribute within a data field of a data record that is not unique, and cannot be used to distinguish one data record in a database from another data record within a database table.<br><br></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>A data element/attribute within a data field of a data record within a database table that is a secondary key in another database table.<br><br></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>A data element/attribute within a data field of a data record within a database table that is a primary key in another database table.<br><br></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>A data element/attribute within a data field of a data record that enables a database to uniquely distinguish one data record in a database from another data record within a database table.</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-6">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-6">c</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						
+						<!-- <span class="discuss-button-dbms d-inline-block shadow p-2" id="db-6">Discuss</span>
+						<div class="discuss-text mt-3" id="dt-6">
+							<div id="disqus_thread"></div>
+							<script>
+							var disqus_config = function () {
+							this.page.url = 'dbms-2';  // Replace PAGE_URL with your page's canonical URL variable
+							this.page.identifier = 'dbms-week-1-q2'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+
+							(function() { // DON'T EDIT BELOW THIS LINE
+							var d = document, s = d.createElement('script');
+							s.src = 'https://npdev.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+							})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>	
+						</div> -->
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 6 end -->
+
+
+
+				<!-- Question - 7 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q7</div>
+						<div class="question-text">Information about a collection of students is given by the relation <br><br> studinfo ( studId, name, sex ) <br><br> The relation<br><br> enroll ( studId, courseId ) <br><br> gives which student has enrolled for ( or taken ) what course ( s ). Assume that every course is taken by atleast one male and at least one female student. What does the following relational algebra expression represent?<br><br> &prod;<sub>courseId</sub> ( ( &prod;<sub>studId</sub> ( &sigma; <sub>sex="female"</sub> ( studInfo ) ) x &prod;<sub>courseId</sub> ( enroll ) ) - enroll) 
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>courses in which all the female students are enrolled.</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>courses in which a proper subset of female students are enrolled.</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>courses in which only male students are enrolled.</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>None of the above.</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-7">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-7">b</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						
+						<!-- <span class="discuss-button-dbms d-inline-block shadow p-2" id="db-7">Discuss</span>
+						<div class="discuss-text mt-3" id="dt-7">
+							<div id="disqus_thread"></div>
+							<script>
+							var disqus_config = function () {
+							this.page.url = 'dbms-2';  // Replace PAGE_URL with your page's canonical URL variable
+							this.page.identifier = 'dbms-week-1-q2'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+
+							(function() { // DON'T EDIT BELOW THIS LINE
+							var d = document, s = d.createElement('script');
+							s.src = 'https://npdev.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+							})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>	
+						</div> -->
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 7 end -->
+
+
+
+				<!-- Question - 8 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q8</div>
+						<div class="question-text">Consider the following two relations below. The primary keys are underlined.<br><br> Identify the possible combination of foreign key.<br><br> employee ( employee_id, department_id, employee_name, salary )<br><br> department ( department_id, manager_id)
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>employee_id</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>department_id</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>department_id , manager_id</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>department_id , manager_id , employee_name</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-8">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-8">b</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						
+						<!-- <span class="discuss-button-dbms d-inline-block shadow p-2" id="db-8">Discuss</span>
+						<div class="discuss-text mt-3" id="dt-8">
+							<div id="disqus_thread"></div>
+							<script>
+							var disqus_config = function () {
+							this.page.url = 'dbms-2';  // Replace PAGE_URL with your page's canonical URL variable
+							this.page.identifier = 'dbms-week-1-q2'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+
+							(function() { // DON'T EDIT BELOW THIS LINE
+							var d = document, s = d.createElement('script');
+							s.src = 'https://npdev.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+							})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>	
+						</div> -->
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 8 end -->
+
+
+
+				<!-- Question - 9 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q9</div>
+						<div class="question-text">Identify the correct order of query processing<br><br>1. Evaluation<br><br> 2.Translation <br><br>3. Optimization <br><br>4. Parsing
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>2 , 4 , 3 , 1</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>4 , 2 , 1 , 3</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>4 , 2 , 3 , 1</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>2 , 4 , 1 , 3</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-9">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-9">a</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						
+						<!-- <span class="discuss-button-dbms d-inline-block shadow p-2" id="db-9">Discuss</span>
+						<div class="discuss-text mt-3" id="dt-9">
+							<div id="disqus_thread"></div>
+							<script>
+							var disqus_config = function () {
+							this.page.url = 'dbms-2';  // Replace PAGE_URL with your page's canonical URL variable
+							this.page.identifier = 'dbms-week-1-q2'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+
+							(function() { // DON'T EDIT BELOW THIS LINE
+							var d = document, s = d.createElement('script');
+							s.src = 'https://npdev.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+							})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>	
+						</div> -->
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 9 end -->
+
+
+
+				<!-- Question - 10 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q10</div>
+						<div class="question-text">Identify the correct statement(s).<br><br> Responsibilities of Transaction-management component :
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>Ensures that the database remains in a consistent state despite Power failures</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>Ensures that the database remains in a consistent state despite Operating system crashes</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>Ensure the consistency of the database during interaction among the concurrent transac-
+tions</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>Ensure consistency of database by orchestrating all access requests issued by the transac-
+tions</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-10">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-10">a , b , c , d</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						
+						<!-- <span class="discuss-button-dbms d-inline-block shadow p-2" id="db-10">Discuss</span>
+						<div class="discuss-text mt-3" id="dt-10">
+							<div id="disqus_thread"></div>
+							<script>
+							var disqus_config = function () {
+							this.page.url = 'dbms-2';  // Replace PAGE_URL with your page's canonical URL variable
+							this.page.identifier = 'dbms-week-1-q2'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+
+							(function() { // DON'T EDIT BELOW THIS LINE
+							var d = document, s = d.createElement('script');
+							s.src = 'https://npdev.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+							})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>	
+						</div> -->
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 10 end -->
 			</div>
 			<!-- col -2 end -->
 
@@ -235,17 +851,110 @@
 
 
 	<script>
-		$(document).ready(function(){
-		  $(".question-answer-tag").click(function(){
-		    $(".question-answer-text").toggle(300);
-		  });
-		});
 
-		$(document).ready(function(){
-		  $(".discuss-button").click(function(){
-		    $(".discuss-text").toggle(300);
-		  });
-		});
+		// // for question 1 start
+		// $(document).ready(function(){
+		//   $("#a-1").click(function(){
+		//     $("#t-1").toggle(300);
+		//   });
+		// });
+
+		// $(document).ready(function(){
+		//   $("#db-1").click(function(){
+		//     $("#dt-1").toggle(300);
+		//   });
+		// });
+		// // question 1 end
+
+
+		// // question 2 start
+		// $(document).ready(function(){
+		//   $("#a-2").click(function(){
+		//     $("#t-2").toggle(300);
+		//   });
+		// });
+
+		// $(document).ready(function(){
+		//   $("#db-2").click(function(){
+		//     $("#dt-2").toggle(300);
+		//   });
+		// });
+		// // question 2 end
+
+
+		// // question 3 start
+		// $(document).ready(function(){
+		//   $("#a-3").click(function(){
+		//     $("#t-3").toggle(300);
+		//   });
+		// });
+		// // question 3 end
+
+
+		// // question 4 start
+		// $(document).ready(function(){
+		//   $("#a-4").click(function(){
+		//     $("#t-4").toggle(300);
+		//   });
+		// });
+		// // question 4 end
+
+
+		// // question 5 start
+		// $(document).ready(function(){
+		//   $("#a-5").click(function(){
+		//     $("#t-5").toggle(300);
+		//   });
+		// });
+		// // question 5 end
+
+
+		// // question 6 start
+		// $(document).ready(function(){
+		//   $("#a-6").click(function(){
+		//     $("#t-6").toggle(300);
+		//   });
+		// });
+		// // question 6 end
+
+
+
+		// // question 7 start
+		// $(document).ready(function(){
+		//   $("#a-7").click(function(){
+		//     $("#t-7").toggle(300);
+		//   });
+		// });
+		// // question 7 end
+
+
+		// // question 8 start
+		// $(document).ready(function(){
+		//   $("#a-8").click(function(){
+		//     $("#t-8").toggle(300);
+		//   });
+		// });
+		// // question 8 end
+
+
+
+		// // question 9 start
+		// $(document).ready(function(){
+		//   $("#a-9").click(function(){
+		//     $("#t-9").toggle(300);
+		//   });
+		// });
+		// // question 9 end
+
+
+
+		// // question 10 start
+		// $(document).ready(function(){
+		//   $("#a-10").click(function(){
+		//     $("#t-10").toggle(300);
+		//   });
+		// });
+		// // question 10 end
 	</script>
 
 </body>

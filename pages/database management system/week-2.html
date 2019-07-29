@@ -52,8 +52,8 @@
 		<div class="d-flex justify-content-center flex-wrap py-5">
 			
 			<div class="d-flex justify-content-center">
-				<a href="week-1.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-dbms-selected">week-1</a>
-				<a href="week-2.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 ">week-2</a>
+				<a href="week-1.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 ">week-1</a>
+				<a href="week-2.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-dbms-selected">week-2</a>
 				<a href="javascript:void(0)" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-3</a>
 				<a href="javascript:void(0)" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-last-border week-tabs-remove-border">week-4</a>
 			</div>
@@ -82,7 +82,7 @@
 					
 					<!-- Modal Header -->
 				    <div class="modal-header">
-				      <h4 class="modal-title">Week-1 Discuss</h4>
+				      <h4 class="modal-title">Week-2 Discuss</h4>
 				      <button type="button" class="close" data-dismiss="modal">&times;</button>
 				    </div>
 
@@ -144,7 +144,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q1</div>
-						<div class="question-text">Identify the correct statement.</div>
+						<div class="question-text">Identify the valid data-types, which can be used in SQL to define the type of data.</div>
 					</div>
 					<!-- Question no. and question start -->
 
@@ -153,22 +153,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>Logical level Abstraction: hide details of data types.</p>
+							<p>varchar</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>Logical level Abstraction: describes how schema is stored in a data base.</p>
+							<p>memo</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>Logical level Abstraction: describes how a record is stored.</p>
+							<p>numeric</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>Logical level Abstraction: describes accessibility of the database by an individual user.</p>
+							<p>string</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -177,7 +177,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="question-answer-tag answer-tag-dbms d-inline-block shadow p-2" id="a-1">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-1">b</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-1">a, c</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -199,7 +199,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q2</div>
-						<div class="question-text">If R and S are two relation then R &cap; S can be represented as.</div>
+						<div class="question-text">Consider the employee table:<br><br>employee (  employee id, name, dept name, salary )<br><br>Create a new employee `W-101', named `Ashwin singh', with 10,00,000 salary for department `Wireless'. Identify the appropriate SQL.</div>
 					</div>
 					<!-- Question no. and question start -->
 
@@ -208,22 +208,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>S - (R - S)</p>
+							<p>INSERT INTO TABLE employee VALUES (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>R - (S - R)</p>
+							<p>INSERT INTO employee (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>(R &cup; S) - [(R - S) &cup; (S - R)]</p>
+							<p>INSERT INTO employee VALUES(`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>(R &cup; S) &cap; [(R - S) &cup; (S - R)]</p>
+							<p>INSERT INTO employee(employee id, name, dept name, salary) VALUES (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -232,7 +232,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-2">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-2">c</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-2">c, d</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -255,9 +255,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q3</div>
-						<div class="question-text">Consider the following relations <br><br> student ( id, name, address, gpa, sizeHS ) <br>
-							campus ( location, enrollment, rank ) <br> apply ( id, location, date, major, decision ) <br><br>
-							Identify the correct query to find name and address of all students with GPA > 3.7 and sizeHS < 1000.
+						<div class="question-text">Refer to the following table student. Identify the correct, "Create SQL statement" for this table.<br><br><img src="images/week-2-q3.png" class="img-fluid">
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -267,22 +265,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>&prod;<sub>name, address</sub> ( &sigma; <sub>GPA > 3.7 ^ sizeHS < 1000 </sub>( student ) )</p>
+							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname&nbsp;varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(id));<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>&sigma;<sub>name, address</sub> ( &prod; <sub>GPA > 3.7 ^ sizeHS < 1000 </sub>( student ) )</p>
+							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname&nbsp;varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(id, lastname));<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>&prod;<sub>name, address</sub> ( &sigma; <sub>GPA > 3.7 v sizeHS < 1000 </sub>( student ) )</p>
+							<p>CREATE TABLE student ( id&nbsp;int, lastname varchar(255) NOT&nbsp;NULL, firstname varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(firstname, lastname));<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>&sigma;<sub>name, address</sub> ( &prod; <sub>GPA > 3.7 v sizeHS < 1000 </sub>( student ) )</p>
+							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;( lastname ));<br><br></p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -291,7 +289,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-3">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-3">a</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-3">b, c</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -313,7 +311,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q4</div>
-						<div class="question-text"><img src="images/week-1-q4.jpg" class="img-fluid"><br><br> Identify the number of tuples in the relation R1 &#8904; R2.
+						<div class="question-text">Refer to the following table student.<br><br><img src="images/week-2-q3.png" class="img-fluid"><br><br>Consider:<br><br>SELECT * FROM student WHERE lastname LIKE '%a';<br><br>What does above SQL statement select from the student table?
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -323,22 +321,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>5</p>
+							<p>Selects all students with a lastname ending with "a".<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>6</p>
+							<p>Selects all students with a lastname starting with "a".<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>7</p>
+							<p>Selects all students with a lastname contains atmost one "a".<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>20</p>
+							<p>Selects all students with a lastname contains no "a".<br><br></p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -347,7 +345,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-4">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-4">c</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-4">a</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -369,7 +367,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q5</div>
-						<div class="question-text">In SQL, which of the following is/are not a DML Commands?
+						<div class="question-text">Find names of employees with years of experience greater than atleast one employee in the Accounts department. Identify the correct, "SQL Query" for this statement.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -379,22 +377,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>DELETE</p>
+							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp IS&nbsp;GREATER THAN (SELECT&nbsp;DISTINCT years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>TRUNCATE</p>
+							<p>SELECT&nbsp;distinct E.name FROM&nbsp;employee AS&nbsp;E, employee AS&nbsp;F WHERE&nbsp;E.years_exp > F.years_exp AND&nbsp;F.dept_name& = 'Accounts';<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>SELECT</p>
+							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp > GREATER&nbsp;( SELECT years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>CREATE</p>
+							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp > SOME ( SELECT&nbsp;years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -425,7 +423,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q6</div>
-						<div class="question-text">Identify the correct statement about Foreign Key.
+						<div class="question-text">Consider the relation schema.<br><br>weather ( city, temperature, humidity, condition).<br><br>Find the names of cities whose temperature is not in the range of 71 to 89.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -435,22 +433,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>A data element/attribute within a data field of a data record that is not unique, and cannot be used to distinguish one data record in a database from another data record within a database table.<br><br></p>
+							<p>SELECT city FROM weather WHERE temperature NOT IN (71 to 89)<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>A data element/attribute within a data field of a data record within a database table that is a secondary key in another database table.<br><br></p>
+							<p>SELECT city FROM weather WHERE temperature NOT IN (71 and 89)<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>A data element/attribute within a data field of a data record within a database table that is a primary key in another database table.<br><br></p>
+							<p>SELECT city FROM weather WHERE temperature NOT BETWEEN (71 to 89)<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>A data element/attribute within a data field of a data record that enables a database to uniquely distinguish one data record in a database from another data record within a database table.</p>
+							<p>SELECT city FROM weather WHERE temperature NOT BETWEEN (71 and 89)</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -459,7 +457,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-6">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-6">c</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-6">d</p>
 					</div>
 					<!-- Question answer end -->
 

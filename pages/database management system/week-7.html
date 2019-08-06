@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<title>NPTELERS | DBMS Week-2</title>
+	<title>NPTELERS | DBMS Week-7</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -34,7 +34,7 @@
 			<span class="d-block course-text">Prof. Partha Pratim Das</span>
 			<span class="d-block course-text">IIT Kharagpur</span>
 			<span class="d-block course-text">8 Weeks</span>
-			<span class="d-block course-quote font-italic mt-5">“Data that is loved tends to survive.” —&nbsp;Kurt&nbsp;Bollacker</span>
+			<span class="d-block course-quote font-italic mt-5">“Data are just summaries of thousands of stories – tell a few of those stories to help make the data meaningful.” —&nbsp;Chip&nbsp;&&nbsp;Dan&nbsp;Heath</span>
 		</div>
 	</section>
 	<!-- Course banner end -->
@@ -42,7 +42,7 @@
 	
 	<!-- did you know start -->
 	<section>
-		<p class="did-you-know text-center p-5"><span class="font-weight-bold pr-2">Did You Know !</span> In Aug 2015, over 1 billion people used Facebook in a single day.</p>
+		<p class="did-you-know text-center p-5"><span class="font-weight-bold pr-2">Did You Know !</span> Bad data costs US businesses alone $600 billion annually.</p>
 	</section>
 	<!-- did you know end -->
 
@@ -52,8 +52,8 @@
 		<div class="d-flex justify-content-center flex-wrap py-5">
 			
 			<div class="d-flex justify-content-center">
-				<a href="week-1.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 ">week-1</a>
-				<a href="week-2.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-dbms-selected">week-2</a>
+				<a href="week-1.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-1</a>
+				<a href="week-2.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-2</a>
 				<a href="week-3.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-3</a>
 				<a href="week-4.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-last-border week-tabs-remove-border">week-4</a>
 			</div>
@@ -61,7 +61,7 @@
 			<div class="d-flex justify-content-center">
 				<a href="week-5.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-5</a>
 				<a href="week-6.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-6</a>
-				<a href="week-7.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-7</a>
+				<a href="week-7.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-dbms-selected">week-7</a>
 				<a href="week-8.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-last-border">week-8</a>
 			</div>
 			
@@ -82,7 +82,7 @@
 					
 					<!-- Modal Header -->
 				    <div class="modal-header">
-				      <h4 class="modal-title">Week-2 Discuss</h4>
+				      <h4 class="modal-title">Week-7 Discuss</h4>
 				      <button type="button" class="close" data-dismiss="modal">&times;</button>
 				    </div>
 
@@ -144,7 +144,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q1</div>
-						<div class="question-text">Identify the valid data-types, which can be used in SQL to define the type of data.</div>
+						<div class="question-text">Can you identify the property of a transaction that the following statement describe?<br><br>Either all operations of the transaction are reflected properly in the database, or none are.</div>
 					</div>
 					<!-- Question no. and question start -->
 
@@ -153,22 +153,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>varchar</p>
+							<p>Atomicity</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>memo</p>
+							<p>Consistency</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>numeric</p>
+							<p>Isolation</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>string</p>
+							<p>Durability</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -177,7 +177,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="question-answer-tag answer-tag-dbms d-inline-block shadow p-2" id="a-1">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-1">a, c</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-1">a</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -199,7 +199,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q2</div>
-						<div class="question-text">Consider the employee table:<br><br>employee (  employee id, name, dept name, salary )<br><br>Create a new employee `W-101', named `Ashwin singh', with 10,00,000 salary for department `Wireless'. Identify the appropriate SQL.</div>
+						<div class="question-text">What is the equivalent serial schedule?<br><img src="images/week-7-q2.png" class="img-fluid"></div>
 					</div>
 					<!-- Question no. and question start -->
 
@@ -208,22 +208,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>INSERT INTO TABLE employee VALUES (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p>T1 - T2 - T3</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>INSERT INTO employee (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p>T1 - T3 - T2</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>INSERT INTO employee VALUES(`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p>T2 - T1 - T3</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>INSERT INTO employee(employee id, name, dept name, salary) VALUES (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p>T3 - T1 - T2</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -232,7 +232,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-2">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-2">c, d</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-2">d</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -255,7 +255,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q3</div>
-						<div class="question-text">Refer to the following table student. Identify the correct, "Create SQL statement" for this table.<br><br><img src="images/week-2-q3.png" class="img-fluid">
+						<div class="question-text">Consider following schedules where S1 and S2 consist of transactions (T1, T2 and T3); and S3 and S4 consist of transactions (t1 and t2).<br><br>S1: W1(X) W2(X) R3(X)<br>S2: W1(X) R3(X) W2(X)<br>S3: R1(X) W2(X) W1(X)<br>S4: R1(X) W1(X) W2(X)<br><br>Identify the correct statement(s)
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -265,22 +265,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname&nbsp;varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(id));<br><br></p>
+							<p>schedule S1 and S2 are view equivalent</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname&nbsp;varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(id, lastname));<br><br></p>
+							<p>schedule S1 and S2 are not view equivalent</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>CREATE TABLE student ( id&nbsp;int, lastname varchar(255) NOT&nbsp;NULL, firstname varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(firstname, lastname));<br><br></p>
+							<p>schedule S3 and S4 are view equivalent</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;( lastname ));<br><br></p>
+							<p>schedule S3 and S4 are not view equivalent</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -289,7 +289,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-3">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-3">b, c</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-3">b, d</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -311,7 +311,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q4</div>
-						<div class="question-text">Refer to the following table student.<br><br><img src="images/week-2-q3.png" class="img-fluid"><br><br>Consider:<br><br>SELECT * FROM student WHERE lastname LIKE '%a';<br><br>What does above SQL statement select from the student table?
+						<div class="question-text">Consider the two transactions T1 and T2, and four schedules S1, S2, S3, S4 of T1 and T2 as given below:<br><br>S1:R1(x) R2(x) R2(y) W1(x) W1(y) W2(y)<br>S2:R1(x) R2(x) R2(y) W1(x) W2(y) W1(y)<br><br>Here R1(x) denotes read operation on X by transaction T1 and W1(x) denotes write operation on X by transaction T1.<br><br>Which of the above schedule(s) are conflict serializable?
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -321,22 +321,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>Selects all students with a lastname ending with "a".<br><br></p>
+							<p>S1 and S2</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>Selects all students with a lastname starting with "a".<br><br></p>
+							<p>S2 only</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>Selects all students with a lastname contains atmost one "a".<br><br></p>
+							<p>S1 only</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>Selects all students with a lastname contains no "a".<br><br></p>
+							<p>neither S1 nor S2</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -345,7 +345,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-4">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-4">a</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-4">b</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -367,7 +367,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q5</div>
-						<div class="question-text">Find names of employees with years of experience greater than atleast one employee in the Accounts department. Identify the correct, "SQL Query" for this statement.
+						<div class="question-text">Consider the following schedule involving two transactions:<br><img src="images/week-7-q5.png" class="img-fluid"><br><br>Which of the following statement is true?
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -377,22 +377,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp IS&nbsp;GREATER THAN (SELECT&nbsp;DISTINCT years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
+							<p>The above schedule is irrecoverable.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>SELECT&nbsp;distinct E.name FROM&nbsp;employee AS&nbsp;E, employee AS&nbsp;F WHERE&nbsp;E.years_exp > F.years_exp AND&nbsp;F.dept_name& = 'Accounts';<br><br></p>
+							<p>The above schedule is recoverable with cascading rollback.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp > GREATER&nbsp;( SELECT years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
+							<p>The above schedule is cascadeless recoverable.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp > SOME ( SELECT&nbsp;years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
+							<p>It can an not be determined from the given schedule whether cascading roll back is required in case it is recoverable.</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -401,7 +401,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-5">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-5">b , d</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-5">c</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -423,7 +423,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q6</div>
-						<div class="question-text">Consider the relation schema.<br><br>weather ( city, temperature, humidity, condition).<br><br>Find the names of cities whose temperature is not in the range of 71 to 89.
+						<div class="question-text">Identify type of lock acquire/release rules in growing phase (first phase) in two-phase locking protocol.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -433,22 +433,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT IN (71 to 89)<br><br></p>
+							<p>can acquire a lock-S on item<br> can acquire a lock-X on item <br>can convert a lock-S to a lock-X<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT IN (71 and 89)<br><br></p>
+							<p>can release a lock-S <br>can release a lock-X <br>can convert a lock-X to a lock-S<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT BETWEEN (71 to 89)<br><br></p>
+							<p>can acquire a lock-S<br>can release a lock-X <br>can convert a lock-X to a lock-S<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT BETWEEN (71 and 89)</p>
+							<p>can release a lock-S on item. <br>can acquire a lock-X on item <br>can convert a lock-S to a lock-X</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -457,7 +457,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-6">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-6">d</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-6">a</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -478,8 +478,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q7</div>
-						<div class="question-text">
-							The student information in a company is stored in the following relation.<br><br>student(name, sex, course, marks, section)<br><br>Consider the following SQL query<br><br>SELECT section FROM student WHERE sex='M' GROUP BY section HAVING AVG(marks) > (SELECT AVG(marks) FROM student);
+						<div class="question-text">Identify the correct statement based on the schedule below.<br><img src="images/week-7-q7.png" class="img-fluid">
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -489,22 +488,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>The query returns the section in which the average mark of male and female students is less than the average mark of all the male students in the school.<br><br></p>
+							<p>Schedule shows Lost Update Anomaly</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>The query returns the section in which the average mark of male students is less than than the average mark of all the male students in the school.<br><br></p>
+							<p>Schedule shows Lost Delete Anomaly</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>The query returns the section in which the average mark of male students is more than the average mark of all the male students in the school.<br><br></p>
+							<p>Schedule does not show Lost Update Anomaly</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>The query returns the section in which the average mark of male students is more than the average mark of all the students in the school.</p>
+							<p>Schedule shows Lost Delete Anomaly along with Lost Update Anomaly</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -513,7 +512,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-7">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-7">d</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-7">a</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -534,7 +533,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q8</div>
-						<div class="question-text">Refer to the following CREATE statements and identify the correct statement(s).<br><br>CREATE TABLE students( student_id INT PRIMARY KEY, student_name VARCHAR(50) NOT NULL);<br><br>CREATE TABLE course( course_id INT PRIMARY KEY, student_id INT NOT NULL, course_fees INT, FOREIGN KEY (student_id) REFERENCES students (student_id) ON DELETE RESTRICT );
+						<div class="question-text">Identify the incorrect statement(s) about the lock compatibility matrix given below.<br><img src="images/week-7-q8.png" class="img-fluid">
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -544,22 +543,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>If a student id value is deleted from the students table, the corresponding records in the course table that use this student id will not be deleted.<br><br></p>
+							<p class="pb-1">X denotes an exclusive mode lock, using which data item can be both read and written</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>If a student id value is deleted from the students table, the corresponding records in the course table that use this student id will also be deleted.<br><br></p>
+							<p class="pb-1">If a transaction holds an S lock on an item, other transaction will not be allowed to obtain a S lock on the same item</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>If a student id value is deleted from the students table, the foreign key constraint will become invalid.<br><br></p>
+							<p class="pb-1">S denotes an shared mode lock, using which data item can only be read</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>If a student id value is deleted from the students table, the corresponding records in the course table that use this student id will be deleted and the foreign key constraint will be come invalid.</p>
+							<p class="pb-1">If a transaction holds an X lock on an item, other transaction may be allowed to obtain a X lock on the same item</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -568,7 +567,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-8">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-8">a</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-8">b, d</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -589,7 +588,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q9</div>
-						<div class="question-text">A role Manager has the privilege of select, insert, update and delete on all tables of database. A new role Employee is created and the following statement is executed.<br><br>grant Manager to Employee;<br><br>Which rights will Employee inherit?
+						<div class="question-text">Consider the following statements based on the wait die scheme for deadlock prevention:<br><br>1. Older transaction may wait for younger one to release data item. (older means smaller timestamp).<br><br>2. Older transaction forces rollback of younger transaction instead of waiting for it. Younger transactions may wait for older ones.<br><br>3. A transaction may die several times before acquiring needed data item.<br><br>4. It is non-preemptive scheme.<br><br>5. It is preemptive scheme.<br><br>Identify the group of statements which are correct.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -599,22 +598,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>Only select</p>
+							<p>1, 3, 4</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>Only select and delete.</p>
+							<p>2, 5</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>Only select, and update but not delete.</p>
+							<p>1, 3, 5</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>All rights - select, delete, update.</p>
+							<p>2, 3, 4</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -623,7 +622,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-9">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-9">d</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-9">a</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -645,7 +644,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q10</div>
-						<div class="question-text"><img src="images/week-2-q10-1.png" class="img-fluid"><br><br><img src="images/week-2-q10-2.png" class="img-fluid"><br><br>An operation on these two relation produce the following output.<br><br><img src="images/week-2-q10-1.png" class="img-fluid"><br><br>Identify the operation.
+						<div class="question-text">Suppose timestamp ordering protocol is used to control concurrent access. In this context a transaction Ti issues a read(Q). Q is the data item. Identify the correct operations for implementing the read.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -655,22 +654,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>company NATURAL LEFT OUTER JOIN foods</p>
+							<p class="pb-2">If Timestamp(Ti) &le; Write-timestamp(Q), the read operation is executed</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>company NATURAL INNER JOIN foods</p>
+							<p class="pb-2">If Timestamp(Ti) &le; Write-timestamp(Q), Read-timestamp(Q) is set to max(Read-timestamp(Q), Timestamp(Ti))</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>company NATURAL RIGHT OUTER JOIN foods</p>
+							<p class="pb-2">If Timestamp(Ti) &le; Write-timestamp(Q), Read-timestamp(Q) is set to max(Read-timestamp(Q), Write-timestamp(Q))</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>company NATURAL FULL OUTER JOIN foods</p>
+							<p class="pb-2">If Timestamp(Ti) &le; Write-timestamp(Q), the read operation is rejected, and Ti is rolled back</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -679,7 +678,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-10">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-10">a</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-10">d</p>
 					</div>
 					<!-- Question answer end -->
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<title>NPTELERS | DBMS Week-2</title>
+	<title>NPTELERS | DBMS Week-6</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -34,7 +34,7 @@
 			<span class="d-block course-text">Prof. Partha Pratim Das</span>
 			<span class="d-block course-text">IIT Kharagpur</span>
 			<span class="d-block course-text">8 Weeks</span>
-			<span class="d-block course-quote font-italic mt-5">“Data that is loved tends to survive.” —&nbsp;Kurt&nbsp;Bollacker</span>
+			<span class="d-block course-quote font-italic mt-5"> “I keep saying that the sexy job in the next 10 years will be statisticians, and I’m not kidding.” —&nbsp;Hal&nbsp;Varian</span>
 		</div>
 	</section>
 	<!-- Course banner end -->
@@ -42,7 +42,7 @@
 	
 	<!-- did you know start -->
 	<section>
-		<p class="did-you-know text-center p-5"><span class="font-weight-bold pr-2">Did You Know !</span> In Aug 2015, over 1 billion people used Facebook in a single day.</p>
+		<p class="did-you-know text-center p-5"><span class="font-weight-bold pr-2">Did You Know !</span> By 2020, about 7 megabytes of new information will be created every second for every human on the planet.</p>
 	</section>
 	<!-- did you know end -->
 
@@ -52,15 +52,15 @@
 		<div class="d-flex justify-content-center flex-wrap py-5">
 			
 			<div class="d-flex justify-content-center">
-				<a href="week-1.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 ">week-1</a>
-				<a href="week-2.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-dbms-selected">week-2</a>
+				<a href="week-1.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-1</a>
+				<a href="week-2.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-2</a>
 				<a href="week-3.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-3</a>
 				<a href="week-4.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-last-border week-tabs-remove-border">week-4</a>
 			</div>
 			
 			<div class="d-flex justify-content-center">
 				<a href="week-5.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-5</a>
-				<a href="week-6.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-6</a>
+				<a href="week-6.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-dbms-selected">week-6</a>
 				<a href="week-7.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-7</a>
 				<a href="week-8.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-last-border">week-8</a>
 			</div>
@@ -82,7 +82,7 @@
 					
 					<!-- Modal Header -->
 				    <div class="modal-header">
-				      <h4 class="modal-title">Week-2 Discuss</h4>
+				      <h4 class="modal-title">Week-6 Discuss</h4>
 				      <button type="button" class="close" data-dismiss="modal">&times;</button>
 				    </div>
 
@@ -144,7 +144,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q1</div>
-						<div class="question-text">Identify the valid data-types, which can be used in SQL to define the type of data.</div>
+						<div class="question-text">Consider a file of 65536 records. Each record is 32 bytes long and its key field is of size 6 bytes. The file is ordered on a non-key field, and the file organization is unspanned. The file is stored in a file system with block size 1024 bytes, and the size of a block pointer is 10 bytes. Consider that the secondary index is built on the key field of the file, and a multi-level index scheme is used to store the secondary index. Identify the number of first-level and second-level blocks in the multi-level index respectively.</div>
 					</div>
 					<!-- Question no. and question start -->
 
@@ -153,22 +153,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>varchar</p>
+							<p>8 and 0</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>memo</p>
+							<p>128 and 6</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>numeric</p>
+							<p>1024 and 16</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>string</p>
+							<p>512 and 5</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -177,7 +177,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="question-answer-tag answer-tag-dbms d-inline-block shadow p-2" id="a-1">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-1">a, c</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-1">c</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -199,7 +199,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q2</div>
-						<div class="question-text">Consider the employee table:<br><br>employee (  employee id, name, dept name, salary )<br><br>Create a new employee `W-101', named `Ashwin singh', with 10,00,000 salary for department `Wireless'. Identify the appropriate SQL.</div>
+						<div class="question-text">Identify the preferred index based on the first column of the figure given below. Assume that memory is very limited.<br><img src="images/week-6-q2.png" class="img-fluid"></div>
 					</div>
 					<!-- Question no. and question start -->
 
@@ -208,22 +208,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>INSERT INTO TABLE employee VALUES (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p>Dense index</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>INSERT INTO employee (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p>Sparse index</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>INSERT INTO employee VALUES(`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p>Scan index</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>INSERT INTO employee(employee id, name, dept name, salary) VALUES (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p>Index with included columns</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -232,7 +232,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-2">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-2">c, d</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-2">b</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -255,7 +255,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q3</div>
-						<div class="question-text">Refer to the following table student. Identify the correct, "Create SQL statement" for this table.<br><br><img src="images/week-2-q3.png" class="img-fluid">
+						<div class="question-text">Consider the following 2-3-4 tree in which each data item is an integer.<br><img src="images/week-6-q3.png" class="img-fluid"><br><br>What is the result of inserting 7 in the above tree?
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -265,22 +265,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname&nbsp;varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(id));<br><br></p>
+							<p><img src="images/week-6-q3-o1.png" class="img-fluid"></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname&nbsp;varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(id, lastname));<br><br></p>
+							<p><img src="images/week-6-q3-o2.png" class="img-fluid"></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>CREATE TABLE student ( id&nbsp;int, lastname varchar(255) NOT&nbsp;NULL, firstname varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(firstname, lastname));<br><br></p>
+							<p><img src="images/week-6-q3-o3.png" class="img-fluid"></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;( lastname ));<br><br></p>
+							<p><img src="images/week-6-q3-o4.png" class="img-fluid"></p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -289,7 +289,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-3">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-3">b, c</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-3">b</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -311,7 +311,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q4</div>
-						<div class="question-text">Refer to the following table student.<br><br><img src="images/week-2-q3.png" class="img-fluid"><br><br>Consider:<br><br>SELECT * FROM student WHERE lastname LIKE '%a';<br><br>What does above SQL statement select from the student table?
+						<div class="question-text">Match data structure with its worst search time complexity.<br><br><b>A. Data Structure</b><br>1. Unordered Array<br>2. Ordered Array<br>3. Unordered List<br>4. Ordered List<br><br><b>B. Worst-case Time Complexity</b><br>a) O(log n)<br>b) O(n)<br><br>Identify the correct match.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -321,22 +321,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>Selects all students with a lastname ending with "a".<br><br></p>
+							<p>A:1 &rarr; B:b<br>A:2 &rarr; B:a<br>A:3 &rarr; B:b<br>A:4 &rarr; B:b<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>Selects all students with a lastname starting with "a".<br><br></p>
+							<p>A:1 &rarr; B:b<br>A:2 &rarr; B:a<br>A:3 &rarr; B:b<br>A:4 &rarr; B:a<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>Selects all students with a lastname contains atmost one "a".<br><br></p>
+							<p>A:1 &rarr; B:b<br>A:2 &rarr; B:a<br>A:3 &rarr; B:a<br>A:4 &rarr; B:b<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>Selects all students with a lastname contains no "a".<br><br></p>
+							<p>A:1 &rarr; B:a<br>A:2 &rarr; B:b<br>A:3 &rarr; B:a<br>A:4 &rarr; B:b<br><br></p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -367,7 +367,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q5</div>
-						<div class="question-text">Find names of employees with years of experience greater than atleast one employee in the Accounts department. Identify the correct, "SQL Query" for this statement.
+						<div class="question-text">Identify the correct properties of a B<sup>+</sup>-Tree of order n.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -377,22 +377,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp IS&nbsp;GREATER THAN (SELECT&nbsp;DISTINCT years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
+							<p>A leaf node has between [(n - 1)/2] and n - 1 values.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>SELECT&nbsp;distinct E.name FROM&nbsp;employee AS&nbsp;E, employee AS&nbsp;F WHERE&nbsp;E.years_exp > F.years_exp AND&nbsp;F.dept_name& = 'Accounts';<br><br></p>
+							<p>A leaf node has between 1 and n - 1 values.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp > GREATER&nbsp;( SELECT years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
+							<p>Each node that is not a root or a leaf has between [n/2] and n children.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp > SOME ( SELECT&nbsp;years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
+							<p>Each node that is not a root or a leaf has between [n/2] and n children.</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -401,7 +401,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-5">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-5">b , d</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-5">a, c</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -423,7 +423,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q6</div>
-						<div class="question-text">Consider the relation schema.<br><br>weather ( city, temperature, humidity, condition).<br><br>Find the names of cities whose temperature is not in the range of 71 to 89.
+						<div class="question-text">If the index entries are inserted in sorted order into a B+ tree, choose the incorrect option/s about the leaf nodes.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -433,22 +433,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT IN (71 to 89)<br><br></p>
+							<p class="pb-1">The new entries get directed to last leaf node if the index entries are inserted in ascending order.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT IN (71 and 89)<br><br></p>
+							<p class="pb-1">When last leaf node gets filled, it is split into two.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT BETWEEN (71 to 89)<br><br></p>
+							<p class="pb-1">If the leaf node splits when inserting in ascending order, the right node is left untouched and the insertions takes place on the parent node.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT BETWEEN (71 and 89)</p>
+							<p class="pb-1">Except for the first and last leaf, the occupancy of nodes is about 50 percent if inserted in ascending or descending order.</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -457,7 +457,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-6">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-6">d</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-6">c</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -478,8 +478,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q7</div>
-						<div class="question-text">
-							The student information in a company is stored in the following relation.<br><br>student(name, sex, course, marks, section)<br><br>Consider the following SQL query<br><br>SELECT section FROM student WHERE sex='M' GROUP BY section HAVING AVG(marks) > (SELECT AVG(marks) FROM student);
+						<div class="question-text">The order of an internal node in a B+ tree index is the maximum number of children it can have. Suppose that a child pointer takes 8 bytes, the search key field value takes 16 bytes, and the block size is 1024 bytes.<br><br>Identify the order of the internal node.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -489,22 +488,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>The query returns the section in which the average mark of male and female students is less than the average mark of all the male students in the school.<br><br></p>
+							<p>42</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>The query returns the section in which the average mark of male students is less than than the average mark of all the male students in the school.<br><br></p>
+							<p>65</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>The query returns the section in which the average mark of male students is more than the average mark of all the male students in the school.<br><br></p>
+							<p>43</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>The query returns the section in which the average mark of male students is more than the average mark of all the students in the school.</p>
+							<p>128</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -513,7 +512,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-7">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-7">d</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-7">c</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -534,7 +533,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q8</div>
-						<div class="question-text">Refer to the following CREATE statements and identify the correct statement(s).<br><br>CREATE TABLE students( student_id INT PRIMARY KEY, student_name VARCHAR(50) NOT NULL);<br><br>CREATE TABLE course( course_id INT PRIMARY KEY, student_id INT NOT NULL, course_fees INT, FOREIGN KEY (student_id) REFERENCES students (student_id) ON DELETE RESTRICT );
+						<div class="question-text">Consider a hash table of size seven, with starting index zero, and a hash function (2x + 5) mod 7 where x is the value of the key. Assuming the hash table is initially empty, which of the following are the contents of the table when the sequence 1, 3, 8, 11, 18 is inserted into the table? Note that ' ' denotes an empty location in the table and use open hashing (policy = linear probing) to solve this question.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -544,22 +543,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>If a student id value is deleted from the students table, the corresponding records in the course table that use this student id will not be deleted.<br><br></p>
+							<p>1, 8, 18, _, 3, _, 11</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>If a student id value is deleted from the students table, the corresponding records in the course table that use this student id will also be deleted.<br><br></p>
+							<p>11, 8, 1, _, 3, _, 18</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>If a student id value is deleted from the students table, the foreign key constraint will become invalid.<br><br></p>
+							<p>18, 8, 1, _, 3, _, 11</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>If a student id value is deleted from the students table, the corresponding records in the course table that use this student id will be deleted and the foreign key constraint will be come invalid.</p>
+							<p>8, 1, 11, _, 3, _, 18</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -589,7 +588,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q9</div>
-						<div class="question-text">A role Manager has the privilege of select, insert, update and delete on all tables of database. A new role Employee is created and the following statement is executed.<br><br>grant Manager to Employee;<br><br>Which rights will Employee inherit?
+						<div class="question-text"><img src="images/week-6-q9.png" class="img-fluid"><br><br>new emp is the column to be indexed. What is the content of the bitmap index ?
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -599,22 +598,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>Only select</p>
+							<p><img src="images/week-6-q9-o1.png" class="img-fluid"></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>Only select and delete.</p>
+							<p><img src="images/week-6-q9-o2.png" class="img-fluid"></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>Only select, and update but not delete.</p>
+							<p><img src="images/week-6-q9-o3.png" class="img-fluid"></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>All rights - select, delete, update.</p>
+							<p><img src="images/week-6-q9-o4.png" class="img-fluid"></p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -623,7 +622,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-9">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-9">d</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-9">a</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -645,7 +644,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q10</div>
-						<div class="question-text"><img src="images/week-2-q10-1.png" class="img-fluid"><br><br><img src="images/week-2-q10-2.png" class="img-fluid"><br><br>An operation on these two relation produce the following output.<br><br><img src="images/week-2-q10-1.png" class="img-fluid"><br><br>Identify the operation.
+						<div class="question-text">For a table T, the characteristics of three of its columns are given below.<br><br>Column A has unique values<br>Column B has a wide range of values<br>Column C contains many nulls and the non-null values are not searched much<br><br>Which of these column/s is/are good for indexing?
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -655,22 +654,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>company NATURAL LEFT OUTER JOIN foods</p>
+							<p>A</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>company NATURAL INNER JOIN foods</p>
+							<p>C</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>company NATURAL RIGHT OUTER JOIN foods</p>
+							<p>There is no potential choice.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>company NATURAL FULL OUTER JOIN foods</p>
+							<p>B</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -679,7 +678,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-10">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-10">a</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-10">a, d</p>
 					</div>
 					<!-- Question answer end -->
 

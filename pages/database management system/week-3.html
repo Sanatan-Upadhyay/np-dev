@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<title>NPTELERS | DBMS Week-2</title>
+	<title>NPTELERS | DBMS Week-3</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -34,7 +34,7 @@
 			<span class="d-block course-text">Prof. Partha Pratim Das</span>
 			<span class="d-block course-text">IIT Kharagpur</span>
 			<span class="d-block course-text">8 Weeks</span>
-			<span class="d-block course-quote font-italic mt-5">“Data that is loved tends to survive.” —&nbsp;Kurt&nbsp;Bollacker</span>
+			<span class="d-block course-quote font-italic mt-5">“You can have data without information, but you cannot have information without data.” —&nbsp;Daniel&nbsp;Keys&nbsp;</span>
 		</div>
 	</section>
 	<!-- Course banner end -->
@@ -42,7 +42,7 @@
 	
 	<!-- did you know start -->
 	<section>
-		<p class="did-you-know text-center p-5"><span class="font-weight-bold pr-2">Did You Know !</span> In Aug 2015, over 1 billion people used Facebook in a single day.</p>
+		<p class="did-you-know text-center p-5"><span class="font-weight-bold pr-2">Did You Know !</span> Out of all the data we create, only about 0.5% is analyzed and put to use</p>
 	</section>
 	<!-- did you know end -->
 
@@ -52,9 +52,9 @@
 		<div class="d-flex justify-content-center flex-wrap py-5">
 			
 			<div class="d-flex justify-content-center">
-				<a href="week-1.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 ">week-1</a>
-				<a href="week-2.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-dbms-selected">week-2</a>
-				<a href="week-3.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-3</a>
+				<a href="week-1.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-1</a>
+				<a href="week-2.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-2</a>
+				<a href="week-3.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-dbms-selected">week-3</a>
 				<a href="week-4.html" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-last-border week-tabs-remove-border">week-4</a>
 			</div>
 			
@@ -82,7 +82,7 @@
 					
 					<!-- Modal Header -->
 				    <div class="modal-header">
-				      <h4 class="modal-title">Week-2 Discuss</h4>
+				      <h4 class="modal-title">Week-3 Discuss</h4>
 				      <button type="button" class="close" data-dismiss="modal">&times;</button>
 				    </div>
 
@@ -144,7 +144,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q1</div>
-						<div class="question-text">Identify the valid data-types, which can be used in SQL to define the type of data.</div>
+						<div class="question-text">Identify the tools that are used for executing SQL commands from a programming language.</div>
 					</div>
 					<!-- Question no. and question start -->
 
@@ -153,22 +153,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>varchar</p>
+							<p>JDBC</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>memo</p>
+							<p>OpenCV</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>numeric</p>
+							<p>ODBC</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>string</p>
+							<p>OpenGL</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -199,7 +199,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q2</div>
-						<div class="question-text">Consider the employee table:<br><br>employee (  employee id, name, dept name, salary )<br><br>Create a new employee `W-101', named `Ashwin singh', with 10,00,000 salary for department `Wireless'. Identify the appropriate SQL.</div>
+						<div class="question-text">Identify the correct Embedded SQL queries for the following:<br><br>To find the names of all employees whose salary is between min salary and max salary<br><br>where min salary and max salary are declared in the host language.</div>
 					</div>
 					<!-- Question no. and question start -->
 
@@ -208,22 +208,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>INSERT INTO TABLE employee VALUES (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p>EXEC SQL<br>DECLARE c CURSOR FOR SELECT name FROM employee WHERE salary BETWEEN :min_salary AND :max_salary END_EXEC<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>INSERT INTO employee (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p>EXEC SQL DECLARE c CURSOR FOR SELECT name FROM employee WHERE salary BETWEEN min_salary AND max_salary END_EXEC<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>INSERT INTO employee VALUES(`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p>EXEC SQL DECLARE c CURSOR FOR SELECT name FROM employee WHERE salary >= :min_salary AND salary <= :max_salary END_EXEC<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>INSERT INTO employee(employee id, name, dept name, salary) VALUES (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p>EXEC SQL DECLARE c CURSOR FOR SELECT name FROM employee WHERE salary BETWEEN min_salary AND max_salary END_EXEC<br><br></p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -232,7 +232,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-2">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-2">c, d</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-2">a, c</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -255,7 +255,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q3</div>
-						<div class="question-text">Refer to the following table student. Identify the correct, "Create SQL statement" for this table.<br><br><img src="images/week-2-q3.png" class="img-fluid">
+						<div class="question-text">Identify the cases below in which a trigger is not used.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -265,22 +265,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname&nbsp;varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(id));<br><br></p>
+							<p>Loading data from a backup cop </p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname&nbsp;varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(id, lastname));<br><br></p>
+							<p>Maintaining summary data.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>CREATE TABLE student ( id&nbsp;int, lastname varchar(255) NOT&nbsp;NULL, firstname varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(firstname, lastname));<br><br></p>
+							<p>Replicating databases by recording changes to delta relations.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;( lastname ));<br><br></p>
+							<p>Replicating updates at a remote site.</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -289,7 +289,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-3">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-3">b, c</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-3">a, d</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -311,7 +311,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q4</div>
-						<div class="question-text">Refer to the following table student.<br><br><img src="images/week-2-q3.png" class="img-fluid"><br><br>Consider:<br><br>SELECT * FROM student WHERE lastname LIKE '%a';<br><br>What does above SQL statement select from the student table?
+						<div class="question-text">Consider tables - students and sports - below:<br><br><img src="images/week-3-q4-1.png" class="img-fluid"><br><br><img src="images/week-3-q4-2.png" class="img-fluid"><br><br>What does (students &#xf7; sports) return?
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -321,22 +321,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>Selects all students with a lastname ending with "a".<br><br></p>
+							<p>Not a valid operation.<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>Selects all students with a lastname starting with "a".<br><br></p>
+							<p><img src="images/week-3-q4-o1.png" class="img-fluid"><br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>Selects all students with a lastname contains atmost one "a".<br><br></p>
+							<p><img src="images/week-3-q4-o2.png" class="img-fluid"><br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>Selects all students with a lastname contains no "a".<br><br></p>
+							<p><img src="images/week-3-q4-o2.png" class="img-fluid"><br><br></p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -367,7 +367,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q5</div>
-						<div class="question-text">Find names of employees with years of experience greater than atleast one employee in the Accounts department. Identify the correct, "SQL Query" for this statement.
+						<div class="question-text">Consider relation R = (A, B).<br><br>Identify relational-algebra expression equivalent to the following domain-relational-calculus expression:<br><br>{< a > |&exist;b ( < a, b >&isin; r ^ b = 15 ) }
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -377,22 +377,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp IS&nbsp;GREATER THAN (SELECT&nbsp;DISTINCT years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
+							<p>&prod;<sub>A</sub> ( &sigma;<sub>B=15 </sub>( r ) )</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>SELECT&nbsp;distinct E.name FROM&nbsp;employee AS&nbsp;E, employee AS&nbsp;F WHERE&nbsp;E.years_exp > F.years_exp AND&nbsp;F.dept_name& = 'Accounts';<br><br></p>
+							<p>&prod;<sub>A</sub> ( &prod;<sub>B=15 </sub>( r ) )</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp > GREATER&nbsp;( SELECT years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
+							<p>&sigma;<sub>B=15 </sub>( r ) )</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp > SOME ( SELECT&nbsp;years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
+							<p>&prod;<sub>B</sub> ( &sigma;<sub>B=15 </sub>( r ) )</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -401,7 +401,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-5">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-5">b , d</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-5">a</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -423,7 +423,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q6</div>
-						<div class="question-text">Consider the relation schema.<br><br>weather ( city, temperature, humidity, condition).<br><br>Find the names of cities whose temperature is not in the range of 71 to 89.
+						<div class="question-text">Consider the relation student(roll, name, dob, course, age) which stores the roll, name, date of birth, courses taken and age of the student. Students can take multiple courses. Two students can have the same name. The attribute roll is unique for every student.<br><br>Identify the possible attribute type/s for name attribute.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -433,22 +433,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT IN (71 to 89)<br><br></p>
+							<p>Multi-valued attribute</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT IN (71 and 89)<br><br></p>
+							<p>Derived attribute</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT BETWEEN (71 to 89)<br><br></p>
+							<p>Composite attribute</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT BETWEEN (71 and 89)</p>
+							<p>Key attribute</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -457,7 +457,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-6">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-6">d</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-6">c</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -478,8 +478,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q7</div>
-						<div class="question-text">
-							The student information in a company is stored in the following relation.<br><br>student(name, sex, course, marks, section)<br><br>Consider the following SQL query<br><br>SELECT section FROM student WHERE sex='M' GROUP BY section HAVING AVG(marks) > (SELECT AVG(marks) FROM student);
+						<div class="question-text">Consider the relational database given below:<br><br>employee(person name, street, city)<br>works(person name, company name, salary)<br>company(company name, city)<br><br>Identify the correct relational algebra expression for the query given below.<br><br>Find the names and cities of residence of all employees who work for `UCO'.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -489,22 +488,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>The query returns the section in which the average mark of male and female students is less than the average mark of all the male students in the school.<br><br></p>
+							<p>&prod;<sub>person_name, city</sub>(employee &#x22C8; ( &sigma;<sub>company_name='UCO'</sub>( works )))<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>The query returns the section in which the average mark of male students is less than than the average mark of all the male students in the school.<br><br></p>
+							<p>&prod;<sub>person_name</sub>(employee &#x22C8; ( &sigma;<sub>company_name='UCO'</sub>( works )))<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>The query returns the section in which the average mark of male students is more than the average mark of all the male students in the school.<br><br></p>
+							<p>&prod;<sub>person_name, city</sub>( &sigma;<sub>street='Bidhan Sarani'</sub> ( employee ) &#x22C8; ( &sigma;<sub>company_name='UCO'</sub>( works )))<br><br></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>The query returns the section in which the average mark of male students is more than the average mark of all the students in the school.</p>
+							<p>&prod;<sub>person_name, city</sub>( &sigma;<sub>city='Kolkata'</sub> ( employee ) &#x22C8; ( &sigma;<sub>company_name='UCO'</sub>( works )))</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -513,7 +512,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-7">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-7">d</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-7">a</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -534,7 +533,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q8</div>
-						<div class="question-text">Refer to the following CREATE statements and identify the correct statement(s).<br><br>CREATE TABLE students( student_id INT PRIMARY KEY, student_name VARCHAR(50) NOT NULL);<br><br>CREATE TABLE course( course_id INT PRIMARY KEY, student_id INT NOT NULL, course_fees INT, FOREIGN KEY (student_id) REFERENCES students (student_id) ON DELETE RESTRICT );
+						<div class="question-text">Consider the following relationship.<br><br><img src="images/week-3-q8.png" class="img-fluid"><br><br>Choose the appropriate relationship between Instructor and Student.<br><br><b>Relation A ( Instructor )</b><br>1. An instructor is associated with several ( including 0 ) students via advisor<br>2. An instructor is associated with at most one student via advisor.<br>3. An instructor is associated with at least one student via advisor.<br><br><b>Relation B ( Student )</b><br>1. A student is associated with several (including 0) instructors via advisor.<br>2. A student is associated with at most one instructor via advisor.<br>3. A student is associated with at least one instructor via advisor.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -544,22 +543,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>If a student id value is deleted from the students table, the corresponding records in the course table that use this student id will not be deleted.<br><br></p>
+							<p>A:3 and B:2</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>If a student id value is deleted from the students table, the corresponding records in the course table that use this student id will also be deleted.<br><br></p>
+							<p>A:1 and B:2</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>If a student id value is deleted from the students table, the foreign key constraint will become invalid.<br><br></p>
+							<p>A:2 and B:3</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>If a student id value is deleted from the students table, the corresponding records in the course table that use this student id will be deleted and the foreign key constraint will be come invalid.</p>
+							<p>A:3 and B:3</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -568,7 +567,7 @@
 					<!-- Question Answer start -->
 					<div class="question-answer d-flex mt-4">
 						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-8">Answer</span>
-						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-8">a</p>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-8">b</p>
 					</div>
 					<!-- Question answer end -->
 
@@ -589,7 +588,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q9</div>
-						<div class="question-text">A role Manager has the privilege of select, insert, update and delete on all tables of database. A new role Employee is created and the following statement is executed.<br><br>grant Manager to Employee;<br><br>Which rights will Employee inherit?
+						<div class="question-text">Consider the bank relations shown below:<br><br>loan(loan_number, branch_name, amount)<br>borrower(customer_name, loan_number)<br><br>Choose the correct options based on the following SQL query:<br><br>CREATE TRIGGER delete_trigger AFTER DELETE ON loan REFERENCING OLD ROW AS old_row FOR EACH ROW DELETE FROM borrower WHERE borrower.customer_name NOT IN (SELECT customer_name FROM borrower WHERE loan_number < > old_row.loan_number) END
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -599,22 +598,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>Only select</p>
+							<p>It is a trigger which is executed automatically upon deletion of an loan from loan relation.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>Only select and delete.</p>
+							<p>Trigger results in the deletion of the records from the borrower relation.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>Only select, and update but not delete.</p>
+							<p>It is a trigger which is executed automatically upon deletion of the customer ( loan borrower ) from borrower relation.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>All rights - select, delete, update.</p>
+							<p>a) and b)</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -645,7 +644,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q10</div>
-						<div class="question-text"><img src="images/week-2-q10-1.png" class="img-fluid"><br><br><img src="images/week-2-q10-2.png" class="img-fluid"><br><br>An operation on these two relation produce the following output.<br><br><img src="images/week-2-q10-1.png" class="img-fluid"><br><br>Identify the operation.
+						<div class="question-text">Consider the University E-R diagram given below<img src="images/week-3-q10.png" class="img-fluid"><br><br>Identify the incorrect statement(s) based on the ER model of the university.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -655,22 +654,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>company NATURAL LEFT OUTER JOIN foods</p>
+							<p>inst dept is a relation set connects weak entity instructor with department.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>company NATURAL INNER JOIN foods</p>
+							<p>department is a strong entity.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>company NATURAL RIGHT OUTER JOIN foods</p>
+							<p>time_slot(time_slot_id, day, start_time, end_time) is a valid schema representation of the time_slot entity.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>company NATURAL FULL OUTER JOIN foods</p>
+							<p>course_id, prereq_id are the fields of prereq relation set.</p>
 						</div>
 					</div>
 					<!-- Question Option end -->

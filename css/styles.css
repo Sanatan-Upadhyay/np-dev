@@ -38,7 +38,15 @@ p{
 	font-size: 22px;
 	font-weight: bold;
 	letter-spacing: 5px;
+	line-height: 14px;
 }
+
+.mylogo-tagline{
+	font-size: 9px;
+	color:#FF3B3F;
+	letter-spacing: 5.5px;
+}
+
 /* Index page logo end*/
 
 
@@ -65,6 +73,11 @@ p{
 		margin-left: 40px;
 		letter-spacing: 10px;
 	}
+
+	.mylogo-tagline{
+		font-size: 12px;
+		letter-spacing: 9.5px;
+	}	
 	
 	.navig{
 	margin-right: 40px;

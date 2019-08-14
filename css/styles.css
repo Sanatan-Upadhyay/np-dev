@@ -160,14 +160,21 @@ p{
 	font-weight: bold;
 }
 
-.blog-button{
+.carousel-blog-button, .carousel-share-button{
 	color:white;
 	padding: 8px 20px;
-	background-color: rgb(227,114,34);
 	font-size: 15px;
 }
 
-.blog-button:hover{
+.carousel-blog-button{
+	background-color: rgb(227,114,34);
+}
+
+.carousel-share-button{
+	background-color: #B82601;
+}
+ 
+.carousel-blog-button:hover, .carousel-share-button:hover{
 	color:white;
 }
 
@@ -178,7 +185,7 @@ p{
 		font-size: 70px;
 	}
 
-	.blog-button{
+	.carousel-blog-button,  .carousel-share-button{
 		font-size: 25px;
 	}	
 }
@@ -256,7 +263,15 @@ p{
 
 
 
-footer p{
+footer span{
 	font-family: simplifica;
 	letter-spacing: 5px;
+}
+
+footer a{
+	font-size: 12px;
+}
+
+footer a:hover{
+	font-weight: bold;
 }

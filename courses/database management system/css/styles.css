@@ -1,82 +1,5 @@
-a{
-	text-decoration: none;
-	color:black;
-}
-a:hover{
-	text-decoration: none;
-	color:black;
-}
 
-.row, .col{
-	margin:0;
-	padding: 0;
-}
-
-p{
-	margin-bottom: 0;
-}
-
-@font-face{
-	font-family: "simplifica";
-	src:url("fonts/simplifica.ttf");
-}
-
-@font-face{
-	font-family: "minimalist";
-	src:url("fonts/minimalist.ttf");
-}
-
-
-
-/*********************** Header Start ************************/
-
-/*		Index Page LOGO    */
-
-.mylogo a{
-	font-family: simplifica;
-	font-size: 22px;
-	font-weight: bold;
-	letter-spacing: 5px;
-}
-/* Index page logo end*/
-
-
-/*		Navigation  bar*/
-.navig a{
-	font-size: 13px;
-	font-weight: lighter;
-	padding: 5px 10px;
-	letter-spacing: 1px;
-	border-bottom: 1px solid white;
-	transition: border 0.4s;
-}
-
-.navig a:hover{
-	border-bottom-color: black;
-}
-/*	navigation bar end*/
-
-
-
-@media screen and (min-width: 576px){
-	.mylogo a{
-		font-size: 28px;
-		margin-left: 40px;
-		letter-spacing: 10px;
-	}
-	
-	.navig{
-	margin-right: 40px;
-	}
-
-	.navig a{
-	font-size: 17px;
-	font-weight: lighter;
-}
-}
-
-/****************************** Header End **********************/
-
+/*this file contain css code of courses*/
 
 
 /***************************** Course Banner start ****************************/
@@ -120,6 +43,8 @@ p{
 
 
 
+
+
 /***************************** Did you know start ****************************/
 .did-you-know{
 	font-size: 15px;
@@ -131,6 +56,8 @@ p{
 }
 
 /***************************** Did you know end ****************************/
+
+
 
 
 
@@ -214,7 +141,7 @@ p{
 
 
 
-/***************************** experience start **********************************/
+/***************************** experience button start **********************************/
 .exp{
 	border-top: 1px solid #CCCBC6;
 	color: #9099A2;
@@ -243,52 +170,5 @@ p{
 		padding: 120px 10px;
 	}
 }
-/***************************** experience end **********************************/
+/***************************** experience button end **********************************/
 
-
-
-/******************************** share button start ***********************************/
-.share-container{
-	background-color: rgb(235,110,128);
-}
-
-.share-container p, .share-button div a{
-	font-family: minimalist;
-	color:white;
-	font-weight: bold;
-}
-
-.share-container p{
-	font-size: 30px;
-}
-
-.share-button div a{
-	font-size: 20px;
-}
-
-.fa-facebook-square, .fa-instagram, .fa-whatsapp{
-	font-size: 30px;
-}
-
-
-@media screen and (min-width: 768px){
-	.share-container p{
-		font-size: 60px;
-	}
-
-	.share-button div a{
-		font-size: 30px;
-	}
-
-	.fa-facebook-square, .fa-instagram, .fa-whatsapp{
-		font-size: 40px;
-	}
-}
-/******************************** share button end ***********************************/
-
-
-
-footer p{
-	font-family: simplifica;
-	letter-spacing: 5px;
-}

@@ -1,0 +1,44 @@
+
+/*this file contain css code of blog page*/
+
+
+
+/********************************Blog start***************************/
+
+.blog-post{
+	border:1px solid #CCCBC6;
+	border-radius: 5px;
+	letter-spacing: 1.5px;
+}
+.blog-post-title{
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.blog-post-text{
+
+}
+
+.blog-post-timestamp{
+	font-size: 12px;
+}
+
+
+@media screen and (min-width: 768px){
+	
+	.blog-post-title{
+		font-size: 55px;
+	}
+
+	.blog-post-text{
+		font-size:20px; 
+	}
+
+	.blog-post-timestamp{
+		font-size: 14px;
+	}
+}
+
+
+
+/********************************Blog End***************************/

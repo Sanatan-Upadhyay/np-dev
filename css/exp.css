@@ -1,0 +1,56 @@
+
+/*this file contains css code of read experience page and share experience page*/
+
+
+
+/********************************Read Experience start***************************/
+
+.exp-heading{
+	font-size: 50px;
+}
+
+.read-exp-container{
+	width:300px;
+	height: 100%;
+	border:1px solid #CCCBC6;
+}
+
+@media screen and (min-width:768px){
+	
+	.exp-heading{
+		font-size: 110px;
+	}
+
+	.read-exp-container{
+		width:400px;
+	}	
+}
+
+/********************************Read Experience End***************************/
+
+
+
+
+/********************************share Experience start***************************/
+.shareexp-heading{
+	font-size: 30px;
+}
+
+.input-name, .input-course,.input-textarea{
+	display: block;
+	width:100%;
+}
+
+.input-textarea{
+	height: 300px;
+}
+
+@media screen and (min-width: 768px){
+	.shareexp-heading{
+		font-size: 80px;
+	}	
+}
+
+
+/********************************share Experience end***************************/
+

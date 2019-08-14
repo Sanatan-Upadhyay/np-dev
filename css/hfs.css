@@ -1,3 +1,7 @@
+
+/*this file contain  css code for header footer and facebook and insta share part */
+
+
 a{
 	text-decoration: none;
 	color:black;
@@ -29,6 +33,7 @@ p{
 
 
 
+
 /*********************** Header Start ************************/
 
 /*		Index Page LOGO    */
@@ -38,7 +43,15 @@ p{
 	font-size: 22px;
 	font-weight: bold;
 	letter-spacing: 5px;
+	line-height: 12px;
 }
+
+.mylogo-tagline{
+	font-size: 9px;
+	color:#FF3B3F;
+	letter-spacing: 5.5px;
+}
+
 /* Index page logo end*/
 
 
@@ -65,61 +78,24 @@ p{
 		margin-left: 40px;
 		letter-spacing: 10px;
 	}
+
+	.mylogo-tagline{
+		font-size: 12px;
+		letter-spacing: 9.5px;
+	}	
 	
 	.navig{
-	margin-right: 40px;
+		margin-right: 40px;
 	}
 
 	.navig a{
-	font-size: 17px;
-	font-weight: lighter;
-}
+		font-size: 17px;
+		font-weight: lighter;
+	}
 }
 
 /****************************** Header End **********************/
 
-
-
-
-/********************************Blog start***************************/
-
-.blog-post{
-	border:1px solid #CCCBC6;
-	border-radius: 5px;
-	letter-spacing: 1.5px;
-}
-.blog-post-title{
-	font-weight: bold;
-	font-size: 35px;
-}
-
-.blog-post-text{
-
-}
-
-.blog-post-timestamp{
-	font-size: 12px;
-}
-
-
-@media screen and (min-width: 768px){
-	
-	.blog-post-title{
-		font-size: 55px;
-	}
-
-	.blog-post-text{
-		font-size:20px; 
-	}
-
-	.blog-post-timestamp{
-		font-size: 14px;
-	}
-}
-
-
-
-/********************************Blog End***************************/
 
 
 
@@ -166,7 +142,22 @@ p{
 
 
 
-footer p{
+
+
+
+/******************************** footer start ***************************************/
+
+footer span{
 	font-family: simplifica;
 	letter-spacing: 5px;
 }
+
+footer a{
+	font-size: 12px;
+}
+
+footer a:hover{
+	font-weight: bold;
+}
+
+/******************************** footer end ***************************************/

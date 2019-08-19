@@ -1,0 +1,31 @@
+
+/*this file contain css code of about.html page and contact.html page*/
+
+.about-title{
+	font-size: 50px;
+	letter-spacing: 1px;
+}
+
+.about-text{
+	max-width: 500px;
+	margin:0 16px; ;
+	border:1px solid #CCCBC6;
+	letter-spacing: 1px; 
+	font-size: 13px;
+}
+
+@media screen and (min-width: 768px){
+	.about-title{
+		font-size: 120px;
+	}
+
+	.about-text{
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 576px){
+	.about-text{
+		margin: auto;
+	}
+}

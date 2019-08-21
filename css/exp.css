@@ -71,7 +71,7 @@ input:focus, textarea:focus{
 }
 
 .input-exp textarea{
-	height: 60px;
+	height: 150px;
 }
 
 .input-submit input{

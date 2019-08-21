@@ -6,7 +6,7 @@
 /********************************Read Experience start***************************/
 
 .exp-heading{
-	font-size: 50px;
+	font-size: 18px;
 }
 
 .read-exp-container{
@@ -18,7 +18,7 @@
 @media screen and (min-width:768px){
 	
 	.exp-heading{
-		font-size: 110px;
+		font-size: 40px;
 	}
 
 	.read-exp-container{

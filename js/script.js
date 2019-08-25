@@ -76,5 +76,54 @@
 		  });
 		  // for question 10 end
 
+
+		  // for question 11 start
+		  $("#a-11").click(function(){
+		    $("#t-11").toggle(300);
+		  });
+		  // for question 11 end
+
+
+		  // for question 12 start
+		  $("#a-12").click(function(){
+		    $("#t-12").toggle(300);
+		  });
+		  // for question 12 end
+
+
+		  // for question 13 start
+		  $("#a-13").click(function(){
+		    $("#t-13").toggle(300);
+		  });
+		  // for question 13 end
+
+
+		  // for question 14 start
+		  $("#a-14").click(function(){
+		    $("#t-14").toggle(300);
+		  });
+		  // for question 14 start
+
+
+		  // for question 15 start
+		  $("#a-15").click(function(){
+		    $("#t-15").toggle(300);
+		  });
+		  // for question 15 end
+
+
+		  // for question 16 start
+		  $("#a-16").click(function(){
+		    $("#t-16").toggle(300);
+		  });
+		  // for question 16 end
+
+
+		  // for question 17 start
+		  $("#a-17").click(function(){
+		    $("#t-17").toggle(300);
+		  });
+		  // for question 17 end
+
 		});
 		

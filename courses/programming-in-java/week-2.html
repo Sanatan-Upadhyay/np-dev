@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>NPTELERS | Week-2 Programming In Java</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://nptelers.in/css/hfs.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="https://kit.fontawesome.com/53b1e88129.js"></script>
+	<script src="https://nptelers.in/js/script.js"></script>
+</head>
+
+<body>
+	
+	<!-- Logo and Navigation start-->
+	<header class="d-flex justify-content-between p-4 shadow">
+		<div class="mylogo d-flex align-items-center"><a href="https://nptelers.in/">NPTELERS</a></div>
+		<nav class="navig d-flex align-items-center">
+			<a href="https://nptelers.in/">HOME</a>
+			<a href="https://nptelers.in/blog">BLOG</a>
+		</nav>
+	</header>
+	<!-- Logo and  Navigation end-->
+
+
+	<!-- Course banner start -->
+	<section>
+		<div class="course-programming-in-java text-center px-3">
+			<span class="d-block course-title font-weight-bold">Programming In Java</span>
+			<span class="d-block course-text">Prof. Debasis Samanta</span>
+			<span class="d-block course-text">IIT Kharagpur</span>
+			<span class="d-block course-text">12 Weeks</span>
+			<span class="d-block course-quote font-italic mt-5">“ Mathematics is a body of knowledge, but it contains no truths ".  —&nbsp;Morris&nbsp;Kline</span>
+		</div>
+	</section>
+	<!-- Course banner end -->
+
+	
+	<!-- did you know start -->
+	<section>
+		<p class="did-you-know text-center p-5"><span class="font-weight-bold pr-2">Did You Know !</span> People tend to associate odd numbers with males and even numbers with females.</p>
+	</section>
+	<!-- did you know end -->
+
+
+	<!-- weeks tabs start -->
+	<section>
+		<div class="d-flex justify-content-center flex-wrap py-5">
+			
+			<div class="d-flex justify-content-center">
+				<a href="https://nptelers.in/courses/programming-in-java/week-1" class="week-tabs week-tabs-programming-in-java px-md-3 py-md-2">week-1</a>
+				<a href="https://nptelers.in/courses/programming-in-java/week-2" class="week-tabs week-tabs-programming-in-java px-md-3 py-md-2 week-tabs-programming-in-java-selected">week-2 &nbsp;</a>
+				<a href="https://nptelers.in/courses/programming-in-java/week-3" class="week-tabs week-tabs-programming-in-java px-md-3 py-md-2">week-3 &nbsp;</a>
+				<a href="https://nptelers.in/courses/programming-in-java/week-4" class="week-tabs week-tabs-programming-in-java px-md-3 py-md-2 week-tabs-last-border">week-4 &nbsp;</a>
+			</div>
+			
+			<div class="d-flex justify-content-center">
+				<a href="https://nptelers.in/courses/programming-in-java/week-5" class="week-tabs week-tabs-programming-in-java px-md-3 py-md-2">week-5</a>
+				<a href="https://nptelers.in/courses/programming-in-java/week-6" class="week-tabs week-tabs-programming-in-java px-md-3 py-md-2">week-6 &nbsp;</a>
+				<a href="https://nptelers.in/courses/programming-in-java/week-7" class="week-tabs week-tabs-programming-in-java px-md-3 py-md-2">week-7 &nbsp;</a>
+				<a href="https://nptelers.in/courses/programming-in-java/week-8" class="week-tabs week-tabs-programming-in-java px-md-3 py-md-2 week-tabs-last-border">week-8 &nbsp;</a>
+			</div>
+
+			<div class="d-flex justify-content-center">
+				<a href="https://nptelers.in/courses/programming-in-java/week-9" class="week-tabs week-tabs-programming-in-java px-md-3 py-md-2">week-9</a>
+				<a href="https://nptelers.in/courses/programming-in-java/week-10" class="week-tabs week-tabs-programming-in-java px-md-3 py-md-2">week-10</a>
+				<a href="https://nptelers.in/courses/programming-in-java/week-11" class="week-tabs week-tabs-programming-in-java px-md-3 py-md-2">week-11</a>
+				<a href="https://nptelers.in/courses/programming-in-java/week-12" class="week-tabs week-tabs-programming-in-java px-md-3 py-md-2 week-tabs-last-border">week-12</a>
+			</div>
+			
+		</div>
+	</section>
+	<!-- weeks tabs end -->
+
+
+	<!-- Question answer start -->
+	<main>
+		<h1 class="assignment text-center py-5">Assignment</h1>
+
+
+		<!-- Modal discuss box start -->
+		<div class="modal fade" id="modal-discuss">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					
+					<!-- Modal Header -->
+				    <div class="modal-header">
+				      <h4 class="modal-title">Week-2 Discuss</h4>
+				      <button type="button" class="close" data-dismiss="modal">&times;</button>
+				    </div>
+
+				    <!-- Modal body -->
+				    <div class="modal-body">
+				    	
+				    	<div id="disqus_thread"></div>
+						<script>
+
+							var disqus_config = function () {
+								this.page.url = 'https://nptelers.in/courses/programming-in-java/week-2';  // Replace PAGE_URL with your page's canonical URL variable
+								this.page.identifier = 'programming-in-java-week-2'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+
+							(function() { // DON'T EDIT BELOW THIS LINE
+								var d = document, s = d.createElement('script');
+								s.src = 'https://nptelers.disqus.com/embed.js';
+								s.setAttribute('data-timestamp', +new Date());
+								(d.head || d.body).appendChild(s);
+							})();
+						</script>
+
+						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+				    </div>
+				    <!-- modal body end -->
+
+
+      				<!-- Modal footer -->
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      				</div>
+
+				</div><!-- modal content end -->
+			</div><!-- modal dialog end -->
+		</div>
+		<!-- Modal discuss box end -->
+
+
+		<div class="row">
+			
+			<div class="col-0 col-md-2"></div>
+			
+			<!-- Col -2 start -->
+			<div class="col-12 col-md-8">
+
+				<!-- Question -1 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q1</div>
+						<div class="question-text">Which of the following is true regarding the execution of Java applets?</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>HTML file is mustto run an applet.</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>Any file containing the < APPLET > tag can be used during an execution.</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>Compilation of source is not needed for applet execution.</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>The source file should be in the local machine.</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="question-answer-tag answer-tag-programming-in-java d-inline-block shadow p-2" id="a-1">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-1">b</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question -1 end -->
+
+
+
+				<!-- Question - 2 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q2</div>
+						<div class="question-text">Which of the following is a valid specifier with the main() method?</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>public</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>private</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>protected</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>default (i.e., nothing)</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-programming-in-java d-inline-block shadow p-2" id="a-2">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-2">a</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 2 end -->
+
+
+
+
+				<!-- Question - 3 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q3</div>
+						<div class="question-text">Consider the following object declaration statement<br><br>Scanner inp= new Scanner( System.in );<br><br>What is System.in in this declaration ?
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>Any file storing data</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>Reference to standard input device, that is, keyboard</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>Reference to a scanner as an input device</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>It is a mouse as an input device</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-programming-in-java d-inline-block shadow p-2" id="a-3">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-3">b</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 3 end -->
+
+
+
+				<!-- Question - 4 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q4</div>
+						<div class="question-text">Which of the following is a valid declaration of an object of class, say Box?</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>Box obj = new Box( );</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>Box obj = new Box;</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>obj = new Box( );</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>new Box obj;</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-programming-in-java d-inline-block shadow p-2" id="a-4">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-4">a</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 4 end -->
+
+
+
+				<!-- Question - 5 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q5</div>
+						<div class="question-text">Which of the following is a Class in Java?
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>int</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>String</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>short</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>double</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-programming-in-java d-inline-block shadow p-2" id="a-5">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-5">b</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>	
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 5 end -->
+
+
+
+				<!-- Question - 6 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q6</div>
+						<div class="question-text">Which of the following statement is incorrect ?
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>Every class must contain a main() method</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>Applets do not require a main() method at all</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>There can be only one main() method in a program</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>main( ) method must be made public</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-programming-in-java d-inline-block shadow p-2" id="a-6">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-6">a</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 6 end -->
+
+
+
+				<!-- Question - 7 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q7</div>
+						<div class="question-text">What is the output of the following program ?<br><br><b>public class Test {<br>public static void main(String [ ] args) {<br>Test t = new Test();<br>t.start();<br>}<br>void start(){<br>int a = 4;<br>int b = 5;<br>System.out.print("" + 8 + 3 + "");<br>System.out.print(a + b);<br>System.out.print(" " + a + b + "");<br>System.out.print(foo() + a + b + " ");<br>System.out.println(a + b + foo());<br>}<br>String foo(){<br>return "foo";<br>}<br>}<br></b>
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>839 45foo45 9foo</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>9 7 7 foo34 34foo</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>72 34 34 foo34 34foo</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>9 7 7 foo 7 7foo</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-programming-in-java d-inline-block shadow p-2" id="a-7">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-7">a</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 7 end -->
+
+
+
+				<!-- Question - 8 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q8</div>
+						<div class="question-text">What is the return type of a method that does not return any value ?
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>int</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>float</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>void</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>double</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-programming-in-java d-inline-block shadow p-2" id="a-8">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-8">c</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 8 end -->
+
+
+
+				<!-- Question - 9 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q9</div>
+						<div class="question-text">What is the process of defining more than one method in a class having the same name but differentiated by method signature?</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>Method overriding</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>Method overloading</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>Encapsulation</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>Inheritance</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-programming-in-java d-inline-block shadow p-2" id="a-9">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-9">b</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 9 end -->
+
+
+
+				<!-- Question - 10 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q10</div>
+						<div class="question-text">Which of the following is called when a method having the same name as that the name of the class where it is defined?
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>abstract</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>this</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>final</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>constructor</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-programming-in-java d-inline-block shadow p-2" id="a-10">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-10">d</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 10 end -->
+
+
+
+				<!-- Question - 11 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q11</div>
+						<div class="question-text"><b>public class Test{<br>public static void main(String args[]){<br>int x = 9;<br>if (x == 9) {<br>int x = 8;<br>System.out.println(x);<br>}<br>}<br>}</b></div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>8</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>9</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>Compilation error.</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>Runtime error.</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="question-answer-tag answer-tag-programming-in-java d-inline-block shadow p-2" id="a-1">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-1">c</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question -11 end -->
+
+
+
+				<!-- Question - 12 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q12</div>
+						<div class="question-text">Which of the following statements is/ are <b>incorrect?</b></div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>Two or more methods with the same name can be differentiated on the basis of their parameters data type.</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>Two or more method having the same name can be differentiated on the basis of number of parameters.</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>Any already defined method in Java library can be defined again in the program with different data type of parameters.</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>No method can call another method without creating an object of the class to which it is defined.</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-programming-in-java d-inline-block shadow p-2" id="a-2">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-2">d</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 12 end -->
+
+
+
+
+				<!-- Question - 13 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q13</div>
+						<div class="question-text"><b>class Box {<br>intwidth;<br>intheight;<br>intlength;<br>}<br>classTest {<br>public static void main(String args[]) {<br>Box b1 = new Box();<br>Box b2 = new Box();<br>b1.height = 1;b1.length = 2;b1.width = 3;<br>b2 = b1;<br>System.out.println(b2.height);<br>}<br>}</b>
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>1</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>2</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>3</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>NULL</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-programming-in-java d-inline-block shadow p-2" id="a-3">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-3">a</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 13 end -->
+
+
+
+				<!-- Question - 14 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q14</div>
+						<div class="question-text">What is the maximum number of arguments that can be passedto a method in Java ?
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>No arguments</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>One</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>Any number of arguments</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>Varies from one compiler to another</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-programming-in-java d-inline-block shadow p-2" id="a-4">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-4">c</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 14 end -->
+
+
+
+				<!-- Question - 15 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q15</div>
+						<div class="question-text">What is not the use of “this” keyword in Java ?
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>Passing itself to another method</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>Calling another constructor in constructor chaining</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>Referring to the instance variable when local variable has the same name</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>Passing itself to method of the same class</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-programming-in-java d-inline-block shadow p-2" id="a-5">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-5">d</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-programming-in-java d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>	
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 15 end -->
+
+			</div>
+			<!-- col -2 end -->
+
+			<div class="col-0 col-md-2"></div>
+
+		</div> <!-- row ended -->
+	</main>
+	<!-- Question answer end -->
+
+
+	<!-- Experience start -->
+	<section class="exp text-center mt-5 font-weight-bold">
+		<p class="exp-read">New To Course ? Read Neptelers Experience <a href="https://nptelers.in/read-experience" class="exp-read-button">Read</a></p>
+		<p class="exp-share mt-5">Already Given Exam ? Share Your Exam Experience <a href="https://nptelers.in/share-experience" class="exp-share-button">Share</a></p>
+	</section>
+	<!-- Experience end -->
+
+
+
+	<!-- Share button start -->
+	<section class="share-container p-5">
+
+		<p class="text-center mb-5">For All Latest Updates Follow Us</p>
+
+		<div class="d-flex justify-content-center flex-wrap share-button">
+			
+			<div class="text-center p-3"><!-- fb://page/PAGEID  -->
+				<a href="javascript:void(0)" class="d-none d-md-inline-block"><i class="fab fa-facebook-square"></i><br>Facebook</a>
+				<a href="javascript:void(0)" class="d-inline-block d-md-none"><i class="fab fa-facebook-square"></i><br>Facebook</a>
+			</div>
+
+			<div class="text-center p-3">
+				<a href="javascript:void(0)" class="d-none d-md-inline-block"><i class="fab fa-instagram"></i><br>Instagram</a>
+				<a href="javascript:void(0)" class="d-inline-block d-md-none"><i class="fab fa-instagram"></i><br>Instagram</a>
+			</div>
+
+			<div class="text-center p-3 d-md-none">
+				<a href="javascript:void(0)" class="d-inline-block"><i class="fab fa-whatsapp"></i><br>Whatsapp</a>
+			</div>
+
+		</div>
+	</section>
+	<!-- Share button end -->
+
+
+
+	<footer class="py-3">
+		<p class="text-center">
+			<a href="https://nptelers.in/about">About |</a>
+			<a href="https://nptelers.in/contact">Contact</a>
+			<span class="font-weight-bold px-3">&copy; NPTELERS | 2019</span>
+		</p>
+	</footer>
+
+
+</body>
+</html>

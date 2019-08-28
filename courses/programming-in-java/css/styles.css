@@ -4,7 +4,7 @@
 
 /***************************** Course Banner start ****************************/
 .course-programming-in-java{
-	background-color: #FC4A1A;
+	background-color: #007849;
 	padding: 100px 0;
 }
 
@@ -47,12 +47,18 @@
 
 /***************************** Did you know start ****************************/
 .did-you-know{
-	font-size: 15px;
+	font-size: 12px;
 	background-color: #FFF7C0;
 }
 
 .did-you-know span{
 	color:#F81B84;
+}
+
+@media screen and (min-width: 768px){
+	.did-you-know{
+		font-size: 15px;
+	}
 }
 
 /***************************** Did you know end ****************************/
@@ -76,13 +82,13 @@
 }
 
 .week-tabs-programming-in-java{
-	color: #FC4A1A;
-	border-color: #FC4A1A;
+	color: #007849;
+	border-color: #007849;
 }
 
 .week-tabs-programming-in-java:hover, .week-tabs-programming-in-java-selected{
 	color: white;
-	background-color: #FC4A1A;
+	background-color: #007849;
 }
 
 
@@ -114,18 +120,18 @@
 }
 
 .answer-tag-programming-in-java, .discuss-button-programming-in-java{
-	color:#FC4A1A;
+	color:#007849;
 	cursor: pointer;
 	user-select: none;
 	background-color: white;
-	border:1px solid #FC4A1A;
+	border:1px solid #007849;
 	transition: color 0.3s
 }
 
 .answer-tag-programming-in-java:hover, .discuss-button-programming-in-java:hover{
 	color: white;
-	background-color: #FC4A1A;
-	border:1px solid #FC4A1A;
+	background-color: #007849;
+	border:1px solid #007849;
 }
 
 .question-answer-text, .discuss-text{

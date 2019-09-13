@@ -140,3 +140,34 @@
 /******************************* subjects Card End ***********************************/
 
 
+
+/***************************** experience button start **********************************/
+.exp{
+	border-top: 1px solid #CCCBC6;
+	color: #9099A2;
+	font-family: simplifica;
+	letter-spacing: 1px;
+	padding: 60px 10px;
+	font-size: 30px;
+}
+
+.exp-read-button, .exp-share-button {
+	background-color:#828081;
+	padding: 5px 10px;
+	color: white;
+	border-radius: 1px;
+	transition: all 0.3s;
+}
+
+.exp-read-button:hover, .exp-share-button:hover{
+	background-color: #9099A2;
+	color: white;
+}
+
+@media screen and (min-width: 768px){
+	.exp{
+		font-size: 40px;
+		padding: 120px 10px;
+	}
+}
+/***************************** experience button end **********************************/

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>NPTELERS | Programming, Data Structures and Algorithms using Python Week-4</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://nptelers.in/css/hfs.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="https://kit.fontawesome.com/53b1e88129.js"></script>
+	<script src="https://nptelers.in/js/script.js"></script>
+
+
+	<!-- google analytics start -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147958346-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-147958346-1');
+	</script>
+	<!-- google analytics end -->
+	
+</head>
+
+<body>
+	
+	<!-- Logo and Navigation start-->
+	<header class="d-flex justify-content-between p-4 shadow">
+		<div class="mylogo d-flex align-items-center"><a href="https://nptelers.in/">NPTELERS</a></div>
+		<nav class="navig d-flex align-items-center">
+			<a href="https://nptelers.in/">HOME</a>
+			<!-- <a href="https://nptelers.in/blog">BLOG</a> -->
+		</nav>
+	</header>
+	<!-- Logo and  Navigation end-->
+
+
+	<!-- Course banner start -->
+	<section>
+		<div class="course-dbms text-center px-3">
+			<span class="d-block course-title font-weight-bold">Programming, Data Structures and Algorithms using Python</span>
+			<span class="d-block course-text">By Prof. Madhavan Mukund</span>
+			<span class="d-block course-text">Chennai Mathematical Institute</span>
+			<span class="d-block course-text">8 Weeks</span>
+			<!-- <span class="d-block course-quote font-italic mt-5">“Where there is data smoke, there is business fire.” —&nbsp;Thomas&nbsp;Redman</span> -->
+		</div>
+	</section>
+	<!-- Course banner end -->
+
+	
+	<!-- did you know start -->
+	<!-- <section>
+		<p class="did-you-know text-center p-5"><span class="font-weight-bold pr-2">Did You Know !</span> Every day, we create 2.5 quintillion bytes of data — so much that 90% of the data in the world today has been created in the last two years alone.</p>
+	</section> -->
+	<!-- did you know end -->
+
+
+	<!-- weeks tabs start -->
+	<section>
+		<div class="d-flex justify-content-center flex-wrap py-5">
+			
+			<div class="d-flex justify-content-center">
+				<a href="https://nptelers.in/courses/programming-data-structures-and-algorithms-using-python/week-1" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-1</a>
+				<a href="https://nptelers.in/courses/programming-data-structures-and-algorithms-using-python/week-2" class="week-tabs week-tabs-dbms px-md-3 py-md-2 ">week-2</a>
+				<a href="https://nptelers.in/courses/programming-data-structures-and-algorithms-using-python/week-3" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-3</a>
+				<a href="https://nptelers.in/courses/programming-data-structures-and-algorithms-using-python/week-4" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-last-border week-tabs-remove-border week-tabs-dbms-selected">week-4</a>
+			</div>
+			
+			<div class="d-flex justify-content-center">
+				<a href="https://nptelers.in/courses/programming-data-structures-and-algorithms-using-python/week-5" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-5</a>
+				<a href="https://nptelers.in/courses/programming-data-structures-and-algorithms-using-python/week-6" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-6</a>
+				<a href="https://nptelers.in/courses/programming-data-structures-and-algorithms-using-python/week-7" class="week-tabs week-tabs-dbms px-md-3 py-md-2">week-7</a>
+				<a href="https://nptelers.in/courses/programming-data-structures-and-algorithms-using-python/week-8" class="week-tabs week-tabs-dbms px-md-3 py-md-2 week-tabs-last-border">week-8</a>
+			</div>
+			
+		</div>
+	</section>
+	<!-- weeks tabs end -->
+
+
+	<!-- Question answer start -->
+	<main>
+		<h1 class="assignment text-center py-5">Assignment</h1>
+
+
+		<!-- Modal discuss box start -->
+		<div class="modal fade" id="modal-discuss">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					
+					<!-- Modal Header -->
+				    <div class="modal-header">
+				      <h4 class="modal-title">Week-4 Discuss</h4>
+				      <button type="button" class="close" data-dismiss="modal">&times;</button>
+				    </div>
+
+				    <!-- Modal body -->
+				    <div class="modal-body">
+				    	
+				    	<div id="disqus_thread"></div>
+						<script>
+
+							var disqus_config = function () {
+								this.page.url = 'https://nptelers.in/courses/programming-data-structures-and-algorithms-using-python/week-4';  // Replace PAGE_URL with your page's canonical URL variable
+								this.page.identifier = 'programming-data-structures-and-algorithms-using-python-week-4'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+
+							(function() { // DON'T EDIT BELOW THIS LINE
+								var d = document, s = d.createElement('script');
+								s.src = 'https://nptelers.disqus.com/embed.js';
+								s.setAttribute('data-timestamp', +new Date());
+								(d.head || d.body).appendChild(s);
+							})();
+						</script>
+
+						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+				    </div>
+				    <!-- modal body end -->
+
+
+      				<!-- Modal footer -->
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      				</div>
+
+				</div><!-- modal content end -->
+			</div><!-- modal dialog end -->
+		</div>
+		<!-- Modal discuss box end -->
+
+
+		<div class="row">
+			
+			<div class="col-0 col-md-2"></div>
+			
+			<!-- Col -2 start -->
+			<div class="col-12 col-md-8">
+
+				<!-- Question -1 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q1</div>
+						<div class="question-text">Consider the following Python function<br><br><code>def mystery(l):<br>&nbsp; if len(l) < 2:<br>&nbsp; &nbsp; return (l)<br>&nbsp; else:<br>&nbsp; &nbsp; return ([l[-1])] + mystery(l[1:-1]) + [l[0]])</code><br><br>What does mystery<code>([23, 13, 71, 66, 28, 55])</code> return ?</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p class="pb-2"><code>(Type: Regex Match) \s*\[\s*55\s*,\s*28\s*,\s*66\s*,\s*71\s*,\s*13\s*,\s*23\s*]\s</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p class="pb-2"><code>(Type: Regex Match) \d*\[\d*55\d*,\d*28\d*,\d*66\d*,\d*71\d*,\d*13\d*,\d*23\d*]\s</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p class="pb-2"><code>(Type: Regex Match) \b*\[\b*55\b*,\b*28\b*,\b*66\b*,\b*71\b*,\b*13\b*,\b*23\b*]\b</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>None Of The Above</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="question-answer-tag answer-tag-dbms d-inline-block shadow p-2" id="a-1">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-1">a &nbsp; &nbsp; The function swaps the first and last elements of the list and then recursively does the same to the middle segment. This reverse the list.</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-dbms d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question -1 end -->
+
+
+
+				<!-- Question - 2 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q2</div>
+						<div class="question-text">What is the value of triplets after the following assignment?<br><br><code>triples = [ (x, y, z) for x in range(1, 4) for y in range(2, 5) for z in range(5, 8) if x+y > z ]</code></div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p class="pb-2"><code>(Type: Regex Match ) \s*\[\s*\(2\s*,\s*4\s*,\s*5\s*\)\s*,\s*\(\s*3\s*,\s*3\s*,\s*5\s*\)\s*,\s*\(\s*3\s*,\s*4\s*,\s*5\s*\)\s*,\s*\(\s*3\s*,\s*4\s*,\s*6\s*\)\s*\]\s*</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>None Of The Above</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-2">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-2">a</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-dbms d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 2 end -->
+
+
+
+
+				<!-- Question - 3 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q3</div>
+						<div class="question-text">Consider the following dictionary.<br><br><code>runs = {"Test":{"Dhawan":[190, 14, 35, 119], "Kholi":[3, 103, 13, 42], "Pujara":[153, 15, 133, 8]}, "ODI":{"Dhawan":[37], "Kholi":[63]}}</code><br><br>Which of the following statements does <b>not</b> generate an error?
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p class="pb-2"><code>runs["ODI"]["Pujara"] = [44]</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p class="pb-2"><code>runs["ODI"]["Pujara"][0] = 44</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p class="pb-2"><code>runs["ODI"]["Pujara"].extent([44])</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p><code> runs["ODI"]["Pujara"].append([44])</code></p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-3">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-3">a &nbsp; &nbsp; ** runs["ODI"]["Pujara"] creates a new key, so one can only assign it a fresh value, not access parts of the value or append to or extend the value.</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-dbms d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 3 end -->
+
+
+
+				<!-- Question - 4 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q4</div>
+						<div class="question-text">Assume that <code>inventory</code> has been initialized as an empty dictionary:<br><br><code>inventory = {}</code><br><br>Which of the following generates an error?
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p class="pb-2"><code>inventory["Amul"] = ["Mystic Mocha", 55]</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p class="pb-2"><code>inventory["Amul, Mystic Mocha"] =  55</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p class="pb-2"><code>inventory[["Amul", "Mystic Mocha"]] =  55</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p><code>inventory[("Amul", "Mystic Mocha")] =  55</code></p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-dbms d-inline-block shadow p-2" id="a-4">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-4">c &nbsp; &nbsp; ** Dictionary keys must be immutable values.</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-dbms d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 4 end -->
+
+			</div>
+			<!-- col -2 end -->
+
+			<div class="col-0 col-md-2"></div>
+
+		</div> <!-- row ended -->
+	</main>
+	<!-- Question answer end -->
+
+
+	<!-- Experience start -->
+	<section class="exp text-center mt-5 font-weight-bold">
+		<p class="exp-read">New To Course ? Read Neptelers Experience <a href="https://nptelers.in/read-experience" class="exp-read-button">Read</a></p>
+		<p class="exp-share mt-5">Already Given Exam ? Share Your Exam Experience <a href="https://nptelers.in/share-experience" class="exp-share-button">Share</a></p>
+	</section>
+	<!-- Experience end -->
+
+
+
+	
+<!-- Share button start -->
+	<section class="share-container p-5">
+
+		<p class="text-center mb-5">For All Latest Updates Follow Us</p>
+
+		<div class="d-flex justify-content-center flex-wrap share-button">
+			
+			<div class="text-center p-3"><!-- fb://page/PAGEID  -->
+				<a href="https://www.facebook.com/Nptelers-100390164675765/" class="d-none d-md-inline-block"><i class="fab fa-facebook-square"></i><br>Facebook</a>
+				<a href="fb://page/100390164675765" class="d-inline-block d-md-none"><i class="fab fa-facebook-square"></i><br>Facebook</a>
+			</div>
+
+			<div class="text-center p-3">
+				<a href="https://www.instagram.com/nptelers/" class="d-none d-md-inline-block"><i class="fab fa-instagram"></i><br>Instagram</a>
+				<a href="instagram://user?username=nptelers" class="d-inline-block d-md-none"><i class="fab fa-instagram"></i><br>Instagram</a>
+			</div>
+
+		</div>
+	</section>
+	<!-- Share button end -->
+
+
+
+	<footer class="py-3">
+		<p class="text-center">
+			<a href="https://nptelers.in/about">About |</a>
+			<a href="https://nptelers.in/contact">Contact |</a>
+			<a href="https://app.termly.io/document/privacy-policy/6cf3d1c4-ab84-4c4c-95e8-78c186ea755f">Privacy Policy</a>
+			<span class="font-weight-bold px-3">&copy; NPTELERS | 2019</span>
+		</p>
+	</footer>
+
+
+</body>
+</html>

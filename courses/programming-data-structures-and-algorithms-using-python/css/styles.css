@@ -3,8 +3,8 @@
 
 
 /***************************** Course Banner start ****************************/
-/*.course-dbms{
-	background-color: #94618E;
+.course-python-ds{
+	background-color: #328CC1;
 	padding: 100px 0;
 }
 
@@ -37,7 +37,7 @@
 	.course-quote{
 		font-size: 22px;
 	}
-}*/
+}
 
 /***************************** Course Banner end ****************************/
 
@@ -46,7 +46,7 @@
 
 
 /***************************** Did you know start ****************************/
-/*.did-you-know{
+.did-you-know{
 	font-size: 15px;
 	background-color: #FFF7C0;
 }
@@ -54,7 +54,7 @@
 .did-you-know span{
 	color:#F81B84;
 }
-*/
+
 /***************************** Did you know end ****************************/
 
 
@@ -62,27 +62,27 @@
 
 
 /****************************** week tabs start ******************************/
-/*.week-tabs{
+.week-tabs{
 	border:1px solid white;
 	border-right: none;
 	border-radius: 1px;
 	font-size: 13px;
 	padding: 4px 8px;
-	transition: all 0.3s
+	transition: all 0.2s
 }
 
 .week-tabs-last-border{
 	border-right:1px solid white;
 }
 
-.week-tabs-dbms{
-	color: #94618E;
-	border-color: #94618E;
+.week-tabs-python-ds{
+	color: #328CC1;
+	border-color: #328CC1;
 }
 
-.week-tabs-dbms:hover, .week-tabs-dbms-selected{
+.week-tabs-python-ds:hover, .week-tabs-python-ds-selected{
 	color: white;
-	background-color: #94618E;
+	background-color: #328CC1;
 }
 
 
@@ -94,7 +94,7 @@
 	.week-tabs-remove-border{
 		border-right: none;
 	}
-}*/
+}
 
 /****************************** week tabs end ******************************/
 
@@ -102,7 +102,7 @@
 
 
 /******************************* Quiz question answer start **********************/
-/*.assignment{
+.assignment{
 	font-family: simplifica;
 	font-size: 60px;
 }
@@ -113,19 +113,19 @@
 	font-size: 13px;
 }
 
-.answer-tag-dbms, .discuss-button-dbms{
-	color:#94618E;
+.answer-tag-python-ds, .discuss-button-python-ds{
+	color:#328CC1;
 	cursor: pointer;
 	user-select: none;
 	background-color: white;
-	border:1px solid #94618E;
-	transition: color 0.3s
+	border:1px solid #328CC1;
+	transition: color 0.2s
 }
 
-.answer-tag-dbms:hover, .discuss-button-dbms:hover{
+.answer-tag-python-ds:hover, .discuss-button-python-ds:hover{
 	color: white;
-	background-color: #94618E;
-	border:1px solid #94618E;
+	background-color: #328CC1;
+	border:1px solid #328CC1;
 }
 
 .question-answer-text, .discuss-text{
@@ -136,13 +136,13 @@
 	.question{
 		font-size: 16px;
 	}
-}*/
+}
 /******************************* Quiz question answer end **********************/
 
 
 
 /***************************** experience button start **********************************/
-/*.exp{
+.exp{
 	border-top: 1px solid #CCCBC6;
 	color: #9099A2;
 	font-family: simplifica;
@@ -169,7 +169,7 @@
 		font-size: 40px;
 		padding: 120px 10px;
 	}
-}*/
+}
 /***************************** experience button end **********************************/
 
 .notavail{
@@ -180,4 +180,8 @@
 	.notavail{
 		font-size: 40px;
 	}
+}
+
+code{
+	color: black;
 }

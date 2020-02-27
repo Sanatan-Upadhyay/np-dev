@@ -46,7 +46,7 @@
 		<div class="mylogo d-flex align-items-center"><a href="https://nptelers.in/">NPTELERS</a></div>
 		<nav class="navig d-flex align-items-center">
 			<a href="https://nptelers.in/">HOME</a>
-			<a href="https://nptelers.in/blog">BLOG</a>
+			<!-- <a href="https://nptelers.in/blog">BLOG</a> -->
 		</nav>
 	</header>
 	<!-- Logo and  Navigation end-->
@@ -271,8 +271,8 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q3</div>
-						<div class="question-text">Consider the following relations <br><br> student ( id, name, address, gpa, sizeHS ) <br>
-							campus ( location, enrollment, rank ) <br> apply ( id, location, date, major, decision ) <br><br>
+						<div class="question-text">Consider the following relations <br><br> <code>student ( id, name, address, gpa, sizeHS ) <br>
+							campus ( location, enrollment, rank ) <br> apply ( id, location, date, major, decision ) </code><br><br>
 							Identify the correct query to find name and address of all students with GPA > 3.7 and sizeHS < 1000.
 						</div>
 					</div>
@@ -496,7 +496,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q7</div>
-						<div class="question-text">Information about a collection of students is given by the relation <br><br> studinfo ( studId, name, sex ) <br><br> The relation<br><br> enroll ( studId, courseId ) <br><br> gives which student has enrolled for ( or taken ) what course ( s ). Assume that every course is taken by atleast one male and at least one female student. What does the following relational algebra expression represent?<br><br> &prod;<sub>courseId</sub> ( ( &prod;<sub>studId</sub> ( &sigma; <sub>sex="female"</sub> ( studInfo ) ) x &prod;<sub>courseId</sub> ( enroll ) ) - enroll) 
+						<div class="question-text">Information about a collection of students is given by the relation <br><br><code> studinfo ( studId, name, sex ) <br><br> The relation<br><br> enroll ( studId, courseId ) <br><br></code> gives which student has enrolled for ( or taken ) what course ( s ). Assume that every course is taken by atleast one male and at least one female student. What does the following relational algebra expression represent?<br><br> &prod;<sub>courseId</sub> ( ( &prod;<sub>studId</sub> ( &sigma; <sub>sex="female"</sub> ( studInfo ) ) x &prod;<sub>courseId</sub> ( enroll ) ) - enroll) 
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -506,17 +506,17 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>courses in which all the female students are enrolled.</p>
+							<p class="pb-2">courses in which all the female students are enrolled.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>courses in which a proper subset of female students are enrolled.</p>
+							<p class="pb-2">courses in which a proper subset of female students are enrolled.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>courses in which only male students are enrolled.</p>
+							<p class="pb-2">courses in which only male students are enrolled.</p>
 						</div>
 						
 						<div class="d-flex">
@@ -551,7 +551,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q8</div>
-						<div class="question-text">Consider the following two relations below. The primary keys are underlined.<br><br> Identify the possible combination of foreign key.<br><br> employee ( employee_id, department_id, employee_name, salary )<br><br> department ( department_id, manager_id)
+						<div class="question-text">Consider the following two relations below. The primary keys are underlined.<br><br> Identify the possible combination of foreign key.<br><br><code> employee ( employee_id, department_id, employee_name, salary )<br><br> department ( department_id, manager_id)</code>
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -561,17 +561,17 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>employee_id</p>
+							<p class="pb-2">employee_id</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>department_id</p>
+							<p class="pb-2">department_id</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>department_id , manager_id</p>
+							<p class="pb-2">department_id , manager_id</p>
 						</div>
 						
 						<div class="d-flex">

@@ -46,7 +46,7 @@
 		<div class="mylogo d-flex align-items-center"><a href="https://nptelers.in/">NPTELERS</a></div>
 		<nav class="navig d-flex align-items-center">
 			<a href="https://nptelers.in/">HOME</a>
-			<a href="https://nptelers.in/blog">BLOG</a>
+			<!-- <a href="https://nptelers.in/blog">BLOG</a> -->
 		</nav>
 	</header>
 	<!-- Logo and  Navigation end-->
@@ -213,7 +213,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q2</div>
-						<div class="question-text">Consider the employee table:<br><br>employee (  employee id, name, dept name, salary )<br><br>Create a new employee `W-101', named `Ashwin singh', with 10,00,000 salary for department `Wireless'. Identify the appropriate SQL.</div>
+						<div class="question-text">Consider the employee table:<br><br><code>employee (  employee id, name, dept name, salary )<br><br>Create a new employee `W-101', named `Ashwin singh', with 10,00,000 salary for department `Wireless'.</code> <br><br>Identify the appropriate SQL.</div>
 					</div>
 					<!-- Question no. and question start -->
 
@@ -222,22 +222,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>INSERT INTO TABLE employee VALUES (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p class="pb-2"><code>INSERT INTO TABLE employee VALUES (`W-101',`Ashwin Singh',`Wireless', 10,00,000)</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>INSERT INTO employee (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p class="pb-2"><code>INSERT INTO employee (`W-101',`Ashwin Singh',`Wireless', 10,00,000)</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>INSERT INTO employee VALUES(`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p class="pb-2"><code>INSERT INTO employee VALUES(`W-101',`Ashwin Singh',`Wireless', 10,00,000)</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>INSERT INTO employee(employee id, name, dept name, salary) VALUES (`W-101',`Ashwin Singh',`Wireless', 10,00,000)<br><br></p>
+							<p><code>INSERT INTO employee(employee id, name, dept name, salary) VALUES (`W-101',`Ashwin Singh',`Wireless', 10,00,000)</code></p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -279,22 +279,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname&nbsp;varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(id));<br><br></p>
+							<p class="pb-2"><code>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname&nbsp;varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(id));</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname&nbsp;varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(id, lastname));<br><br></p>
+							<p class="pb-2"><code>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname&nbsp;varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(id, lastname));</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>CREATE TABLE student ( id&nbsp;int, lastname varchar(255) NOT&nbsp;NULL, firstname varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(firstname, lastname));<br><br></p>
+							<p class="pb-2"><code>CREATE TABLE student ( id&nbsp;int, lastname varchar(255) NOT&nbsp;NULL, firstname varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;(firstname, lastname));</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;( lastname ));<br><br></p>
+							<p><code>CREATE TABLE student ( id&nbsp;int NOT&nbsp;NULL, lastname varchar(255) NOT&nbsp;NULL, firstname varchar(255), age&nbsp;int, PRIMARY KEY&nbsp;( lastname ));</code></p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -325,7 +325,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q4</div>
-						<div class="question-text">Refer to the following table student.<br><br><img src="images/week-2-q3.PNG" class="img-fluid"><br><br>Consider:<br><br>SELECT * FROM student WHERE lastname LIKE '%a';<br><br>What does above SQL statement select from the student table?
+						<div class="question-text">Refer to the following table student.<br><br><img src="images/week-2-q3.PNG" class="img-fluid"><br><br>Consider:<br><br><code>SELECT * FROM student WHERE lastname LIKE '%a';</code><br><br>What does above SQL statement select from the student table?
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -335,22 +335,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>Selects all students with a lastname ending with "a".<br><br></p>
+							<p class="pb-2">Selects all students with a lastname ending with "a".</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>Selects all students with a lastname starting with "a".<br><br></p>
+							<p class="pb-2">Selects all students with a lastname starting with "a".</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>Selects all students with a lastname contains atmost one "a".<br><br></p>
+							<p class="pb-2">Selects all students with a lastname contains atmost one "a".</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>Selects all students with a lastname contains no "a".<br><br></p>
+							<p>Selects all students with a lastname contains no "a".</p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -391,22 +391,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp IS&nbsp;GREATER THAN (SELECT&nbsp;DISTINCT years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
+							<p class="pb-2"><code>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp IS&nbsp;GREATER THAN (SELECT&nbsp;DISTINCT years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>SELECT&nbsp;distinct E.name FROM&nbsp;employee AS&nbsp;E, employee AS&nbsp;F WHERE&nbsp;E.years_exp > F.years_exp AND&nbsp;F.dept_name& = 'Accounts';<br><br></p>
+							<p class="pb-2"><code>SELECT&nbsp;distinct E.name FROM&nbsp;employee AS&nbsp;E, employee AS&nbsp;F WHERE&nbsp;E.years_exp > F.years_exp AND&nbsp;F.dept_name& = 'Accounts';</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp > GREATER&nbsp;( SELECT years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
+							<p class="pb-2"><code>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp > GREATER&nbsp;( SELECT years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp > SOME ( SELECT&nbsp;years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');<br><br></p>
+							<p><code>SELECT&nbsp;name FROM&nbsp;employee WHERE&nbsp;years_exp > SOME ( SELECT&nbsp;years_exp FROM&nbsp;employee WHERE&nbsp;dept_name = 'Accounts');</code></p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -437,7 +437,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q6</div>
-						<div class="question-text">Consider the relation schema.<br><br>weather ( city, temperature, humidity, condition).<br><br>Find the names of cities whose temperature is not in the range of 71 to 89.
+						<div class="question-text">Consider the relation schema.<br><br><code>weather ( city, temperature, humidity, condition).</code><br><br>Find the names of cities whose temperature is not in the range of 71 to 89.
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -447,22 +447,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT IN (71 to 89)<br><br></p>
+							<p class="pb-2"><code>SELECT city FROM weather WHERE temperature NOT IN (71 to 89)</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT IN (71 and 89)<br><br></p>
+							<p class="pb-2"><code>SELECT city FROM weather WHERE temperature NOT IN (71 and 89)</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT BETWEEN (71 to 89)<br><br></p>
+							<p class="pb-2"><code>SELECT city FROM weather WHERE temperature NOT BETWEEN (71 to 89)</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>SELECT city FROM weather WHERE temperature NOT BETWEEN (71 and 89)</p>
+							<p><code>SELECT city FROM weather WHERE temperature NOT BETWEEN (71 and 89)</code></p>
 						</div>
 					</div>
 					<!-- Question Option end -->
@@ -493,7 +493,7 @@
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q7</div>
 						<div class="question-text">
-							The student information in a company is stored in the following relation.<br><br>student(name, sex, course, marks, section)<br><br>Consider the following SQL query<br><br>SELECT section FROM student WHERE sex='M' GROUP BY section HAVING AVG(marks) > (SELECT AVG(marks) FROM student);
+							The student information in a company is stored in the following relation.<br><br><code>student(name, sex, course, marks, section)</code><br><br>Consider the following SQL query<br><br><code>SELECT section FROM student WHERE sex='M' GROUP BY section HAVING AVG(marks) > (SELECT AVG(marks) FROM student);</code>
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -503,17 +503,17 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>The query returns the section in which the average mark of male and female students is less than the average mark of all the male students in the school.<br><br></p>
+							<p class="pb-2">The query returns the section in which the average mark of male and female students is less than the average mark of all the male students in the school.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>The query returns the section in which the average mark of male students is less than than the average mark of all the male students in the school.<br><br></p>
+							<p class="pb-2">The query returns the section in which the average mark of male students is less than than the average mark of all the male students in the school.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>The query returns the section in which the average mark of male students is more than the average mark of all the male students in the school.<br><br></p>
+							<p class="pb-2">The query returns the section in which the average mark of male students is more than the average mark of all the male students in the school.</p>
 						</div>
 						
 						<div class="d-flex">
@@ -548,7 +548,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q8</div>
-						<div class="question-text">Refer to the following CREATE statements and identify the correct statement(s).<br><br>CREATE TABLE students( student_id INT PRIMARY KEY, student_name VARCHAR(50) NOT NULL);<br><br>CREATE TABLE course( course_id INT PRIMARY KEY, student_id INT NOT NULL, course_fees INT, FOREIGN KEY (student_id) REFERENCES students (student_id) ON DELETE RESTRICT );
+						<div class="question-text">Refer to the following CREATE statements and identify the correct statement(s).<br><br><code>CREATE TABLE students( student_id INT PRIMARY KEY, student_name VARCHAR(50) NOT NULL);<br><br>CREATE TABLE course( course_id INT PRIMARY KEY, student_id INT NOT NULL, course_fees INT, FOREIGN KEY (student_id) REFERENCES students (student_id) ON DELETE RESTRICT );</code>
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -558,17 +558,17 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>If a student id value is deleted from the students table, the corresponding records in the course table that use this student id will not be deleted.<br><br></p>
+							<p class="pb-2">If a student id value is deleted from the students table, the corresponding records in the course table that use this student id will not be deleted.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>If a student id value is deleted from the students table, the corresponding records in the course table that use this student id will also be deleted.<br><br></p>
+							<p class="pb-2">If a student id value is deleted from the students table, the corresponding records in the course table that use this student id will also be deleted.</p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>If a student id value is deleted from the students table, the foreign key constraint will become invalid.<br><br></p>
+							<p class="pb-2">If a student id value is deleted from the students table, the foreign key constraint will become invalid.</p>
 						</div>
 						
 						<div class="d-flex">
@@ -603,7 +603,7 @@
 					<!-- Question no. and question start -->
 					<div class="d-flex question-n-text pb-4">
 						<div class="question-n font-weight-bold pr-3">Q9</div>
-						<div class="question-text">A role Manager has the privilege of select, insert, update and delete on all tables of database. A new role Employee is created and the following statement is executed.<br><br>grant Manager to Employee;<br><br>Which rights will Employee inherit?
+						<div class="question-text">A role Manager has the privilege of select, insert, update and delete on all tables of database. A new role Employee is created and the following statement is executed.<br><br><code>grant Manager to Employee;</code><br><br>Which rights will Employee inherit?
 						</div>
 					</div>
 					<!-- Question no. and question start -->
@@ -669,22 +669,22 @@
 					<div class="question-options">
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">a)</span>
-							<p>company NATURAL LEFT OUTER JOIN foods</p>
+							<p><code>company NATURAL LEFT OUTER JOIN foods</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">b)</span>
-							<p>company NATURAL INNER JOIN foods</p>
+							<p><code>company NATURAL INNER JOIN foods</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">c)</span>
-							<p>company NATURAL RIGHT OUTER JOIN foods</p>
+							<p><code>company NATURAL RIGHT OUTER JOIN foods</code></p>
 						</div>
 						
 						<div class="d-flex">
 							<span class="font-weight-bold pr-3">d)</span>
-							<p>company NATURAL FULL OUTER JOIN foods</p>
+							<p><code>company NATURAL FULL OUTER JOIN foods</code></p>
 						</div>
 					</div>
 					<!-- Question Option end -->

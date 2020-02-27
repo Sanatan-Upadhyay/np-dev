@@ -127,43 +127,43 @@
 
 
 		  // for question 18 start
-		  $("#a-17").click(function(){
-		    $("#t-17").toggle(300);
+		  $("#a-18").click(function(){
+		    $("#t-18").toggle(300);
 		  });
 		  // for question 18 end
 
 
 		  // for question 19 start
-		  $("#a-17").click(function(){
-		    $("#t-17").toggle(300);
+		  $("#a-19").click(function(){
+		    $("#t-19").toggle(300);
 		  });
 		  // for question 19 end
 
 
 		  // for question 20 start
-		  $("#a-17").click(function(){
-		    $("#t-17").toggle(300);
+		  $("#a-20").click(function(){
+		    $("#t-20").toggle(300);
 		  });
 		  // for question 20 end
 
 
 		  // for question 21 start
-		  $("#a-17").click(function(){
-		    $("#t-17").toggle(300);
+		  $("#a-21").click(function(){
+		    $("#t-21").toggle(300);
 		  });
 		  // for question 21 end
 
 
 		  // for question 22 start
-		  $("#a-17").click(function(){
-		    $("#t-17").toggle(300);
+		  $("#a-22").click(function(){
+		    $("#t-22").toggle(300);
 		  });
 		  // for question 22 end
 
 
 		  // for question 23 start
-		  $("#a-17").click(function(){
-		    $("#t-17").toggle(300);
+		  $("#a-23").click(function(){
+		    $("#t-23").toggle(300);
 		  });
 		  // for question 23 end
 

@@ -4,7 +4,7 @@
 
 /***************************** Course Banner start ****************************/
 .course-cc{
-	background-color: #328CC1;
+	background-color: #C98474;
 	padding: 100px 0;
 }
 
@@ -76,13 +76,13 @@
 }
 
 .week-tabs-cc{
-	color: #328CC1;
-	border-color: #328CC1;
+	color: #C98474;
+	border-color: #C98474;
 }
 
 .week-tabs-cc:hover, .week-tabs-cc-selected{
 	color: white;
-	background-color: #328CC1;
+	background-color: #C98474;
 }
 
 
@@ -114,18 +114,18 @@
 }
 
 .answer-tag-cc, .discuss-button-cc{
-	color:#328CC1;
+	color:#C98474;
 	cursor: pointer;
 	user-select: none;
 	background-color: white;
-	border:1px solid #328CC1;
+	border:1px solid #C98474;
 	transition: color 0.2s
 }
 
 .answer-tag-cc:hover, .discuss-button-cc:hover{
 	color: white;
-	background-color: #328CC1;
-	border:1px solid #328CC1;
+	background-color: #C98474;
+	border:1px solid #C98474;
 }
 
 .question-answer-text, .discuss-text{

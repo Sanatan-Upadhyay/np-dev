@@ -4,7 +4,7 @@
 
 /***************************** Course Banner start ****************************/
 .course-daa{
-	background-color: #F7B733;
+	background-color: #DCAE1D;
 	padding: 100px 0;
 }
 
@@ -83,13 +83,13 @@
 }
 
 .week-tabs-daa{
-	color: #F7B733;
-	border-color: #F7B733;
+	color: #DCAE1D;
+	border-color: #DCAE1D;
 }
 
 .week-tabs-daa:hover, .week-tabs-daa-selected{
 	color: white;
-	background-color: #F7B733;
+	background-color: #DCAE1D;
 }
 
 
@@ -121,18 +121,18 @@
 }
 
 .answer-tag-daa, .discuss-button-daa{
-	color:#F7B733;
+	color:#DCAE1D;
 	cursor: pointer;
 	user-select: none;
 	background-color: white;
-	border:1px solid #F7B733;
+	border:1px solid #DCAE1D;
 	transition: color 0.3s
 }
 
 .answer-tag-daa:hover, .discuss-button-daa:hover{
 	color: white;
-	background-color: #F7B733;
-	border:1px solid #F7B733;
+	background-color: #DCAE1D;
+	border:1px solid #DCAE1D;
 }
 
 .question-answer-text, .discuss-text{

@@ -1,0 +1,189 @@
+
+/*this file contain css code of courses*/
+
+
+/***************************** Course Banner start ****************************/
+.course-cyber-security{
+	background-color: #93C178;
+	padding: 100px 0;
+}
+
+.course-title, .course-text, .course-quote{
+	font-family: minimalist;
+	color: white;
+}
+
+.course-title{
+	font-size: 23px;
+}
+
+.course-text{
+	font-size: 17px;
+}
+
+.course-quote{
+	font-size: 13px;
+}
+
+@media screen and (min-width: 768px){
+	.course-title{
+		font-size: 60px;
+	}
+
+	.course-text{
+		font-size: 30px;
+	}
+
+	.course-quote{
+		font-size: 22px;
+	}
+}
+
+/***************************** Course Banner end ****************************/
+
+
+
+
+
+/***************************** Did you know start ****************************/
+.did-you-know{
+	font-size: 12px;
+	background-color: #FFF7C0;
+}
+
+.did-you-know span{
+	color:#F81B84;
+}
+
+@media screen and (min-width: 768px){
+	.did-you-know{
+		font-size: 15px;
+	}
+}
+
+/***************************** Did you know end ****************************/
+
+
+
+
+
+/****************************** week tabs start ******************************/
+.week-tabs{
+	border:1px solid white;
+	border-right: none;
+	border-radius: 1px;
+	font-size: 13px;
+	padding: 4px 8px;
+	transition: all 0.3s
+}
+
+.week-tabs-last-border{
+	border-right:1px solid white;
+}
+
+.week-tabs-cyber-security{
+	color: #93C178;
+	border-color: #93C178;
+}
+
+.week-tabs-cyber-security:hover, .week-tabs-cyber-security-selected{
+	color: white;
+	background-color: #93C178;
+}
+
+
+@media screen and (min-width: 768px){
+	.week-tabs{
+		font-size: 18px;
+	}
+
+	.week-tabs-remove-border{
+		border-right: none;
+	}
+}
+
+/****************************** week tabs end ******************************/
+
+
+
+
+/******************************* Quiz question answer start **********************/
+.assignment{
+	font-family: simplifica;
+	font-size: 60px;
+}
+
+.question{
+	border:1px solid #CCCBC6;
+	border-radius: 5px;
+	font-size: 13px;
+}
+
+.answer-tag-cyber-security, .discuss-button-cyber-security{
+	color:#93C178;
+	cursor: pointer;
+	user-select: none;
+	background-color: white;
+	border:1px solid #93C178;
+	transition: color 0.3s
+}
+
+.answer-tag-cyber-security:hover, .discuss-button-cyber-security:hover{
+	color: white;
+	background-color: #93C178;
+	border:1px solid #93C178;
+}
+
+.question-answer-text, .discuss-text{
+	display: none;
+}
+
+@media screen and (min-width: 768px){
+	.question{
+		font-size: 16px;
+	}
+}
+/******************************* Quiz question answer end **********************/
+
+
+
+/***************************** experience button start **********************************/
+.exp{
+	border-top: 1px solid #CCCBC6;
+	color: #9099A2;
+	font-family: simplifica;
+	letter-spacing: 1px;
+	padding: 60px 10px;
+	font-size: 30px;
+}
+
+.exp-read-button, .exp-share-button {
+	background-color:#828081;
+	padding: 5px 10px;
+	color: white;
+	border-radius: 1px;
+	transition: all 0.3s;
+}
+
+.exp-read-button:hover, .exp-share-button:hover{
+	background-color: #9099A2;
+	color: white;
+}
+
+@media screen and (min-width: 768px){
+	.exp{
+		font-size: 40px;
+		padding: 120px 10px;
+	}
+}
+/***************************** experience button end **********************************/
+
+.notavail{
+	font-size: 18px;
+}
+
+@media screen and (min-width: 768px){
+	.notavail{
+		font-size: 40px;
+	}
+}

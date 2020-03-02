@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>NPTELERS | Week-2 Python for Data Science</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://nptelers.in/css/hfs.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="https://nptelers.in/js/script.js"></script>
+
+	<!-- google analytics start -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147958346-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-147958346-1');
+	</script>
+	<!-- google analytics end -->
+
+	<!-- google ads start-->
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-4498160282426934",
+	    enable_page_level_ads: true
+	  });
+	</script>
+	<!-- google ads end -->
+	
+</head>
+
+<body>
+	
+	<!-- Logo and Navigation start-->
+	<header class="d-flex justify-content-between p-4 shadow">
+		<div class="mylogo d-flex align-items-center"><a href="https://nptelers.in/">NPTELERS</a></div>
+		<nav class="navig d-flex align-items-center">
+			<a href="https://nptelers.in/">HOME</a>
+			<!-- <a href="https://nptelers.in/blog">BLOG</a> -->
+		</nav>
+	</header>
+	<!-- Logo and  Navigation end-->
+
+
+	<!-- Course banner start -->
+	<section>
+		<div class="course-python-for-data-science text-center px-3">
+			<span class="d-block course-title font-weight-bold">Python for Data Science</span>
+			<span class="d-block course-text">By Prof. Raghunathan Rengasamy</span>
+			<span class="d-block course-text">IIT Madras</span>
+			<span class="d-block course-text">4 Weeks</span>
+			<!-- <span class="d-block course-quote font-italic mt-5">“ Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program ". —&nbsp;Linus&nbsp;Torvalds</span> -->
+		</div>
+	</section>
+	<!-- Course banner end -->
+
+	
+	<!-- did you know start -->
+	<!-- <section>
+		<p class="did-you-know text-center p-5"><span class="font-weight-bold pr-2">Did You Know !</span> Java was called Oak at the beginning.</p>
+	</section> -->
+	<!-- did you know end -->
+
+
+	<!-- weeks tabs start -->
+	<section>
+		<div class="d-flex justify-content-center flex-wrap py-5">
+			
+			<div class="d-flex justify-content-center">
+				<a href="https://nptelers.in/courses/python-for-data-science/week-1" class="week-tabs week-tabs-python-for-data-science px-md-3 py-md-2">week-1</a>
+				<a href="https://nptelers.in/courses/python-for-data-science/week-2" class="week-tabs week-tabs-python-for-data-science px-md-3 py-md-2 week-tabs-python-for-data-science-selected">week-2 &nbsp;</a>
+				<a href="https://nptelers.in/courses/python-for-data-science/week-3" class="week-tabs week-tabs-python-for-data-science px-md-3 py-md-2">week-3 &nbsp;</a>
+				<a href="https://nptelers.in/courses/python-for-data-science/week-4" class="week-tabs week-tabs-python-for-data-science px-md-3 py-md-2 week-tabs-last-border">week-4 &nbsp;</a>
+			</div>
+			
+		</div>
+	</section>
+	<!-- weeks tabs end -->
+
+
+	<!-- Question answer start -->
+	<main>
+		<h1 class="assignment text-center py-5">Assignment</h1>
+
+
+		<!-- Modal discuss box start -->
+		<div class="modal fade" id="modal-discuss">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					
+					<!-- Modal Header -->
+				    <div class="modal-header">
+				      <h4 class="modal-title">Week-2 Discuss</h4>
+				      <button type="button" class="close" data-dismiss="modal">&times;</button>
+				    </div>
+
+				    <!-- Modal body -->
+				    <div class="modal-body">
+				    	
+				    	<div id="disqus_thread"></div>
+						<script>
+
+							var disqus_config = function () {
+								this.page.url = 'https://nptelers.in/courses/python-for-data-science/week-2';  // Replace PAGE_URL with your page's canonical URL variable
+								this.page.identifier = 'python-for-data-science-week-2'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+
+							(function() { // DON'T EDIT BELOW THIS LINE
+								var d = document, s = d.createElement('script');
+								s.src = 'https://nptelers.disqus.com/embed.js';
+								s.setAttribute('data-timestamp', +new Date());
+								(d.head || d.body).appendChild(s);
+							})();
+						</script>
+
+						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+				    </div>
+				    <!-- modal body end -->
+
+      				<!-- Modal footer -->
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      				</div>
+
+				</div><!-- modal content end -->
+			</div><!-- modal dialog end -->
+		</div>
+		<!-- Modal discuss box end -->
+
+
+		<div class="row">
+			
+			<div class="col-0 col-md-2"></div>
+			
+			<!-- Col -2 start -->
+			<div class="col-12 col-md-8">
+
+				<!-- Question -1 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q1</div>
+						<div class="question-text">Package that deals with dataframe is</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>numpy</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>dataframe</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>pandas</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>math</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="question-answer-tag answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-1">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-1">c</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question -1 end -->
+
+
+
+				<!-- Question - 2 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q2</div>
+						<div class="question-text">The data type of the following python object <code>'a' is: a={23, 24, 25, 26, 27}</code></div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>list</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>dictionary</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>set</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>arrays</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-2">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-2">c</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 2 end -->
+
+
+
+
+				<!-- Question - 3 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q3</div>
+						<div class="question-text">Variable ‘a’ is defined as<br><code><b>a = ‘gOOd moRning’</b></code><br>Command to convert ‘a’ from ‘gOOd moRning’ to ‘Good Morning’ is:-
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p><code>a.upper( )</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p><code>a.lower( )</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p><code>a.string( )</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p><code>a.title( )</code></p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-3">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-3">d</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 3 end -->
+
+
+
+				<!-- Question - 4 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q4</div>
+						<div class="question-text">Which of the following python data structure is immutable?
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>list</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>dictionary</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>tuple</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>array</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-4">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-4">c</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 4 end -->
+
+
+
+				<!-- Question - 5 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q5</div>
+						<div class="question-text">Identify the braces used to create a <b>dictionary</b> in Python.
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p><code>( )</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p><code>{ }</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p><code>[ ]</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p><code>All of the above</code></p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-5">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-5">b</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>	
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 5 end -->
+
+
+
+				<!-- Question - 6 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q6</div>
+						<div class="question-text">The command used to add elements to a <b>list</b>
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p><code>append( )</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p><code>extend( )</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p><code>insert( )</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>All of the above</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-6">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-6">d</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 6 end -->
+
+
+
+				<!-- Question - 7 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q7</div>
+						<div class="question-text">Using the list <b>‘Stationery’</b> answer questions <b>7-8</b><br><br><code>Product = ['Pencil', 'Pen', 'Eraser', 'Pencil Box', 'Scale']<br>Price= [5, 10, 2, 20, 12]<br>Brand = ['Camlin', 'Rotomac', 'Nataraj', 'Camel', 'Apsara']<br>Stationery = [Product, Price, Brand]</code><br><br>The command to add <b>“Notebook”</b> as the first element inside the first level of the list <b>“Stationery”</b> is:-
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p class="pb-2"><code>Stationery[0].append('Notebook')</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p class="pb-2"><code>Stationery[0].insert(0,'Notebook')</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p class="pb-2"><code>Stationery[0][1] = "Notebook"</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p><code>Stationery[0].extend('Notebook')</code></p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-7">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-7">b</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 7 end -->
+
+
+
+				<!-- Question - 8 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q8</div>
+						<div class="question-text">Command to replace the element of Brand, <b>“Camel”</b> with <b>“Camlin”</b> inside the list is:-
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p class="pb-2"><code>Stationery[2][3].append('Camlin')</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p class="pb-2"><code>Stationery[2].insert(3,'Camlin')</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p class="pb-2"><code>Stationery[2][3] = "Camlin"</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>None of the above</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-8">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-8">c</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 8 end -->
+
+
+
+				<!-- Question - 9 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q9</div>
+						<div class="question-text">The list "Months" is defined as:-<br><br><code><b>Months = ['Jan', 'Mar', 'June', 'Aug', 'June', 'Feb', 'Nov', 'Dec', 'June', 'Apr', 'May',     'June']</b></code><br><br>Which of the following commands returns the number of occurrences of <b>‘June’</b>?
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p class="pb-2"><code>Months.count('June')</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p class="pb-2"><code>Months.len('June')</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p class="pb-2"><code>Months[‘June’].count()</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p><code>Months[‘June’].len()</code></p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-9">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-9">a</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 9 end -->
+
+
+
+				<!-- Question - 10 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q10</div>
+						<div class="question-text">Choose the correct command to sort <b>'Ages'</b> in ascending order<br><br><code>Ages = [ ’20’, ‘26’, ‘56’, ‘54’, ‘32’, ‘28’, ‘23’, ‘99’, ‘87’, ‘10’, ‘65’, ‘88’, ‘66’, ‘48’, ‘42’, ‘27’, ‘33’, ‘38’,  ‘83’, ‘94’, ‘66’, ‘44’]</code>
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p><code>sorted(Ages, reverse=False)</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p><code>Ages.sort()</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p><code>sorted(Ages, reverse=True)</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>both A and B</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-10">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-10">d</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+				</div>
+				<!-- Question - 10 end -->
+
+
+
+				<!-- Question - 11 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q11</div>
+						<div class="question-text">Answer questions 11 and 12 using the information given below: <br><br> <code>D = [‘MONDAY’, ‘TUESDAY’,  ‘WEDNESDAY’, ‘THURSDAY’, ‘FRIDAY’, ‘SATURDAY’, ‘SUNDAY’]</code><br><br>The command to print <b>WEDNESDAY, THURSDAY</b> from the list “D” is</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p><code>print(D[-5], D[-4])</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p><code>print(D[3], D[4])</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p><code>print(D[2:5])</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>All of the above</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="question-answer-tag answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-11">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-11">a</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question -11 end -->
+
+
+
+				<!-- Question - 12 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q12</div>
+						<div class="question-text">The command used to reverse the above list “D” is:-</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p><code>reverse(D)</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p><code>D.reverse()</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p><code>list(reversed(D))</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>both B and C</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-12">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-12">d</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 12 end -->
+
+
+
+
+				<!-- Question - 13 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q13</div>
+						<div class="question-text">The command to clear all the elements from a <b>Set</b> is:-
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p><code>remove( )</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p><code>discard( )</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p><code>clear( )</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p><code>All of the above</code></p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-13">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-13">c</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 13 end -->
+
+
+
+				<!-- Question - 14 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q14</div>
+						<div class="question-text">Answer questions 14 and 15 using the information given below: <br><br><code>Mylist =[‘a’, ‘a’, ‘b’, ‘b’, ‘b’, ‘c’, ‘c’, ‘d’, ‘e’]</code><br><br>The output of the code: <code><b>Mylist.index(‘d’)</b></code> is
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>7</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>8</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>4</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>6</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-14">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-14">a</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 14 end -->
+
+
+
+				<!-- Question - 15 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q15</div>
+						<div class="question-text">The output after you run the command:<br><br><code><b>Mylist.pop(0)<br>print(Mylist)</b></code>
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p class="pb-2"><code>[‘a’, ‘a’, ‘b’, ‘b’, ‘b’, ‘c’, ‘c’, ‘d’, ‘e’]</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p class="pb-2"><code>[‘a’, ‘b’, ‘b’, ‘b’, ‘c’, ‘c’, ‘d’, ‘e’]</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p class="pb-2"><code>[‘a’, ‘a’ ‘b’, ‘b’, ‘b’, ‘c’, ‘c’, ‘d’]</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p><code>[‘b’, ‘b’, ‘b’, ‘c’, ‘c’, ‘d’, ‘e’]</code></p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-15">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-15">b</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>	
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 15 end -->
+
+
+
+
+				<!-- Question - 16 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q16</div>
+						<div class="question-text">The command to find the number of elements in the following list <b>“N”</b><br><code><b>N = [24, 27, 29, 26, 25, 23, 20]</b></code>
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p><code>len(N)</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p><code>N.count()</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p><code>N.len()</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p><code>count(N)</code></p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-16">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-16">a</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 16 end -->
+
+
+
+
+				<!-- Question - 17 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q17</div>
+						<div class="question-text">Create a dictionary ‘Country’ that maps the following countries to their capitals respectively.<br><br><img src="images/1.png" alt="question 17" class="img-fluid"><br><br>The command to replace <b>“Sydney”</b> with <b>“Canberra”</b> is:-
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p><code>Country['Australia']="Canberra"</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p><code>Country.update({"Australia":"Canberra"})</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>Both A and B</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>None of the above</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-17">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-17">c</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 17 end -->
+
+
+
+				<!-- Question - 18 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q18</div>
+						<div class="question-text">Create the following sets X1 and X2 using the data provided below and answer the questions <b>18</b> and <b>19</b><br><br><img src="images/2.png" alt="question 18" class="img-fluid"><br><br>The output of <code><b>X1.intersection(X2)</b></code> will be
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p><code>{0,1,7,8}</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p><code>{1,3,7,8}</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p><code>{1,2,7,8}</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p><code>{1,4,7,8}</code></p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-18">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-18">b</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 18 end -->
+
+
+
+				<!-- Question - 19 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q19</div>
+						<div class="question-text">The command <code><b>X1.symmetric_difference(X2)</b></code>
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p class="pb-2">returns all elements belonging to both set X1 and X2</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p class="pb-2">returns elements belonging to X1 but not X2</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p class="pb-2">returns elements not common to both sets X1 and X2</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>returns elements common to X1 and X2</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-19">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-19">c</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 19 end -->
+
+
+
+				<!-- Question - 20 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q20</div>
+						<div class="question-text">Which of the following is a code template for creating objects in Python?
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>list</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>set</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>dictionary </p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>class</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-20">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-20">d</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 20 end -->
+
+
+
+				<!-- Question - 21 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q21</div>
+						<div class="question-text">Create the following <b>Matrix “Y”</b> in Python and answer questions 21 to 23 :<br><br><img src="images/3.png" alt="question 21" class="img-fluid"><br><br>The determinant of the matrix <b>“Y”</b> rounded off to the zeroth decimal place is
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p>110</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p>120</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p>0</p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p>1</p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-21">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-21">a</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 21 end -->
+
+
+
+
+				<!-- Question - 22 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q22</div>
+						<div class="question-text"> Inverse of matrix <b>“Y”</b> rounded off to second decimal place is
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p class="pb-2"><code>([[- 0.73, 0.68, 0.11],<br>[0.09,  -0.27, 0.04],<br>[0.18,  0.05,  -0.13]])</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p class="pb-2"><code>([[ 0.73, -0.68, -0.11],<br>[-0.09,  0.27, -0.04],<br>[-0.18,  0.05,  0.13]])</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p class="pb-2"><code>([[ 0.73, 0.68, 0.11],<br>[0.09,  0.27, 0.04],<br>[0.18,  0.05,  0.13]])</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p><code>([[- 0.73, -0.68, -0.11],<br>[-0.09,  -0.27, -0.04],<br>[-0.18,  -0.05, -0.13]])</code></p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-22">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-22">b</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 22 end -->
+
+
+
+				<!-- Question - 23 Start -->
+				<div class="d-flex question flex-column shadow mx-3 px-3 py-4 mt-5">
+					
+					<!-- Question no. and question start -->
+					<div class="d-flex question-n-text pb-4">
+						<div class="question-n font-weight-bold pr-3">Q23</div>
+						<div class="question-text">The column sum of <b>Y<sup>T</sup></b> is
+						</div>
+					</div>
+					<!-- Question no. and question start -->
+
+					
+					<!-- Question Option start -->
+					<div class="question-options">
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">a)</span>
+							<p class="pb-2"><code>matrix([[11, 27, 25]])</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">b)</span>
+							<p class="pb-2"><code>matrix([[19, 14, 25]])</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">c)</span>
+							<p class="pb-2"><code>matrix([[19, 14, 30]])</code></p>
+						</div>
+						
+						<div class="d-flex">
+							<span class="font-weight-bold pr-3">d)</span>
+							<p><code>matrix([[11, 27, 30]])</code></p>
+						</div>
+					</div>
+					<!-- Question Option end -->
+
+
+					<!-- Question Answer start -->
+					<div class="question-answer d-flex mt-4">
+						<span class="answer-tag-python-for-data-science d-inline-block shadow p-2" id="a-23">Answer</span>
+						<p class="question-answer-text p-2 pl-3 font-weight-bold" id="t-23">c</p>
+					</div>
+					<!-- Question answer end -->
+
+
+					<!-- discussion start -->
+					<div class="discuss mt-3">
+						<span class="discuss-button-python-for-data-science d-inline-block shadow p-2" data-toggle="modal" data-target="#modal-discuss">Discuss</span>
+					</div>
+					<!-- discussion end -->
+
+				</div>
+				<!-- Question - 23 end -->
+
+
+			</div>
+			<!-- col -2 end -->
+
+			<div class="col-0 col-md-2"></div>
+
+		</div> <!-- row ended -->
+	</main>
+	<!-- Question answer end -->
+
+
+	<!-- Experience start -->
+	<section class="exp text-center mt-5 font-weight-bold">
+		<p class="exp-read">New To Course ? Read Neptelers Experience <a href="https://nptelers.in/read-experience" class="exp-read-button">Read</a></p>
+		<p class="exp-share mt-5">Already Given Exam ? Share Your Exam Experience <a href="https://nptelers.in/share-experience" class="exp-share-button">Share</a></p>
+	</section>
+	<!-- Experience end -->
+
+
+
+	
+<!-- Share button start -->
+	<section class="share-container p-5">
+
+		<p class="text-center mb-5">For All Latest Updates Follow Us</p>
+
+		<div class="d-flex justify-content-center flex-wrap share-button">
+			
+			<div class="text-center p-3"><!-- fb://page/PAGEID  -->
+				<a href="https://www.facebook.com/Nptelers-100390164675765/" class="d-none d-md-inline-block"><i class="fab fa-facebook-square"></i><br>Facebook</a>
+				<a href="fb://page/100390164675765" class="d-inline-block d-md-none"><i class="fab fa-facebook-square"></i><br>Facebook</a>
+			</div>
+
+			<div class="text-center p-3">
+				<a href="https://www.instagram.com/nptelers/" class="d-none d-md-inline-block"><i class="fab fa-instagram"></i><br>Instagram</a>
+				<a href="instagram://user?username=nptelers" class="d-inline-block d-md-none"><i class="fab fa-instagram"></i><br>Instagram</a>
+			</div>
+
+		</div>
+	</section>
+	<!-- Share button end -->
+
+
+
+	<footer class="py-3">
+		<p class="text-center">
+			<a href="https://nptelers.in/about">About |</a>
+			<a href="https://nptelers.in/contact">Contact |</a>
+			<a href="https://app.termly.io/document/privacy-policy/6cf3d1c4-ab84-4c4c-95e8-78c186ea755f">Privacy Policy</a>
+			<span class="font-weight-bold px-3">&copy; NPTELERS | 2019</span>
+		</p>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/53b1e88129.js"></script>
+
+</body>
+</html>
